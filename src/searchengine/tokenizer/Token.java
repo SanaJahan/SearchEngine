@@ -1,11 +1,6 @@
 package searchengine.tokenizer;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 
 import searchengine.util.DocumentReader;
@@ -33,15 +28,9 @@ public class Token {
 
   public void readDocuments() {
     String fileContents = "";
-    try {
-      fileContents = documentReader.readFile(Charset.forName("utf-8"), this.fileName);
-      this.fileContents = fileContents;
-      //this.tokenizeDocument();
-    } catch (IOException e) {
-      e.printStackTrace();
-    } catch (URISyntaxException use) {
-      use.printStackTrace();
-    }
+    documentReader.readFile(Charset.forName("utf-8"), "../../../Information Retrieval/SearchEngine/cfc-xml/");
+    this.fileContents = fileContents;
+    //this.tokenizeDocument();
 
   }
 
