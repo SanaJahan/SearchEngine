@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.DirectoryIteratorException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
@@ -21,55 +22,41 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+
 public class DocumentReader {
 
-  public static void main(String[] args) throws IOException, URISyntaxException, ParserConfigurationException {
-    DocumentReader documentReader = new DocumentReader();
-    documentReader.readFile(Charset.forName("utf-8"), "../../../Information Retrieval/SearchEngine/cfc-xml");
-  }
-
-
   public String readFile(Charset encoding, String location) {
-    Path dir = Paths.get(location);
-    try (DirectoryStream<Path> stream = Files.newDirectoryStream(dir)) {
-      for (Path path : stream) {
-        File file = new File(path.toString());
-        this.readFile(Charset.forName("utf-8"), file.getName());
-        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-        Document doc = dBuilder.parse(file);
-        doc.getDocumentElement().normalize();
-        NodeList nodeList = doc.getElementsByTagName("*");
-        String content = "";
-        for (int i = 0; i < nodeList.getLength(); i++) {
-          Node node = nodeList.item(i);
-          String attrStr = listAllAttributes(node);
-          content += node.getParentNode().getNodeName() + ": " + node.getNodeName() + ": " + node.getTextContent();
-          content += attrStr + "\n";
-        }
-        System.out.println(content);
-        return content;
+    String output = "";
+    File file = new File(location);
 
+    try {
+      DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+      DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+      Document doc = dBuilder.parse(file);
+      doc.getDocumentElement().normalize();
+      NodeList nodeList = doc.getElementsByTagName("*");
+      for (int i = 0; i < nodeList.getLength(); i++) {
+        String content = "";
+        Node node = nodeList.item(i);
+        String attrStr = listAllAttributes(node);
+        content += node.getParentNode().getNodeName() + ": " + node.getNodeName() + ": " + node.getTextContent();
+        content += attrStr + "\n";
+        byte[] encoded = content.getBytes();
+        output += new String(encoded, encoding);
       }
-      return null;
-    } catch (DirectoryIteratorException | IOException | ParserConfigurationException | SAXException x) {
-      System.err.println(x);
+      return output;
+    } catch (ParserConfigurationException | SAXException | IOException e) {
+      e.printStackTrace();
       return null;
     }
   }
 
   public String listAllAttributes(Node element) {
-
-    System.out.println("List attributes for node: " + element);
-    // get a map containing the attributes of this node
     NamedNodeMap attributes = element.getAttributes();
     String attrStr = "";
-    // get the number of nodes in this map
     int numAttrs = attributes.getLength();
-
     for (int i = 0; i < numAttrs; i++) {
       Attr attr = (Attr) attributes.item(i);
-
       String attrName = attr.getNodeName();
       String attrValue = attr.getNodeValue();
       attrStr += attrName + " : " + attrValue + "\n";
