@@ -1,13 +1,7 @@
 package searchengine;
 
-import org.xml.sax.SAXException;
-
-import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import javax.xml.parsers.ParserConfigurationException;
 
 import searchengine.tokenizer.Token;
 
@@ -18,6 +12,7 @@ public class Main {
         for (int i = 4; i < 10; i++) {
           final int index = i;
           Runnable task = () -> {
+                System.out.println(" Reading file cf7" + index + ".xml");
                 Token token = new Token( "../../../Information Retrieval/SearchEngine/cfc-xml/cf7" + index + ".xml");
                 token.readDocuments();
           };

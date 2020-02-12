@@ -1,28 +1,19 @@
 package searchengine.tokenizer;
 
-import org.xml.sax.SAXException;
-
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-import javax.xml.parsers.ParserConfigurationException;
 
 import searchengine.util.DocumentReader;
 
 /**
- * Data structure for tokens used for indexing
- *  [term <docId, freq>]
+ * Data structure for tokens used for indexing [term <docId, freq>]
  */
 public class Token {
 
   private String fileName;
   private String fileContents;
-
-  private List<DocumentIndex> documentList;
-
   private DocumentReader documentReader;
 
 
@@ -32,11 +23,19 @@ public class Token {
   }
 
 
-
   public void readDocuments() {
-    String fileContents = documentReader.readFile(Charset.forName("utf-8"), this.fileName);;
+    String fileContents = documentReader.readFile(Charset.forName("utf-8"), this.fileName);
     this.fileContents = fileContents;
-    //this.tokenizeDocument();
+    this.tokenizeContent(fileContents);
+  }
+
+  private void tokenizeContent(String fileContents) {
+    // TODO: remove unnecessary things and add single whitespaces only.
+    // TODO: split into array based on whitespaces. Ignore the stop words.
+    /** TODO: Make RecordNum as DocID while splitting. Rest of the content as posting with RecordNum as docId and freq.
+     *  TODO: Sort the terms and merge the common documents.
+     *  TODO: Make the term as key, postings as value.
+     */
   }
 
   /*private void removeStringGarbage() {
@@ -54,7 +53,7 @@ public class Token {
    *//*
   private void splitFileContents() {
     // Consists of docId and list of all documents
-    this.documentList = new ArrayList<DocumentIndex>();
+    this.documentList = new ArrayList<Tuple>();
 
     // Splitting string by keeping delimiter
     List<String> news = new ArrayList<String>();
@@ -79,7 +78,7 @@ public class Token {
       String[] terms = tokens.split("\\s");
 
       //filling up the documentlist.
-      DocumentIndex docIndex = new DocumentIndex(docID, terms);
+      Tuple docIndex = new Tuple(docID, terms);
       this.documentList.add(docIndex);
     }
 
