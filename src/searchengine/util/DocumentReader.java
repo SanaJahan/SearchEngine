@@ -7,16 +7,13 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.DirectoryIteratorException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -39,8 +36,9 @@ public class DocumentReader {
         String content = "";
         Node node = nodeList.item(i);
         String attrStr = listAllAttributes(node);
-        content += node.getParentNode().getNodeName() + ": " + node.getNodeName() + ": " + node.getTextContent();
+        content +=  " " + node.getTextContent() + " ";
         content += attrStr + "\n";
+        content = content.replaceAll("[.|,|-]", " ");
         byte[] encoded = content.getBytes();
         output += new String(encoded, encoding);
       }
@@ -57,12 +55,23 @@ public class DocumentReader {
     int numAttrs = attributes.getLength();
     for (int i = 0; i < numAttrs; i++) {
       Attr attr = (Attr) attributes.item(i);
-      String attrName = attr.getNodeName();
       String attrValue = attr.getNodeValue();
-      attrStr += attrName + " : " + attrValue + "\n";
+      attrStr += attrValue + "\n";
     }
     return attrStr;
 
+  }
+
+  public String[] getStopWords(String filename) throws IOException {
+    FileReader fileReader = new FileReader(filename);
+    BufferedReader bufferedReader = new BufferedReader(fileReader);
+    List<String> lines = new ArrayList<>();
+    String line;
+    while ((line = bufferedReader.readLine()) != null) {
+      lines.add(line);
+    }
+    bufferedReader.close();
+    return lines.toArray(new String[lines.size()]);
   }
 
 }

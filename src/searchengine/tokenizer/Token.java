@@ -3,7 +3,13 @@ package searchengine.tokenizer;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import searchengine.util.DocumentReader;
 
@@ -23,120 +29,76 @@ public class Token {
   }
 
 
-  public void readDocuments() {
+  public void readDocuments() throws IOException {
     String fileContents = documentReader.readFile(Charset.forName("utf-8"), this.fileName);
     this.fileContents = fileContents;
-    this.tokenizeContent(fileContents);
+    this.tokenizeContent();
   }
 
-  private void tokenizeContent(String fileContents) {
-    // TODO: remove unnecessary things and add single whitespaces only.
-    // TODO: split into array based on whitespaces. Ignore the stop words.
-    /** TODO: Make RecordNum as DocID while splitting. Rest of the content as posting with RecordNum as docId and freq.
-     *  TODO: Sort the terms and merge the common documents.
-     *  TODO: Make the term as key, postings as value.
-     */
-  }
+  // TODO: remove unnecessary things and add single whitespaces only.
+  // TODO: split into array based on whitespaces. Ignore the stop words.
 
-  /*private void removeStringGarbage() {
+  private void tokenizeContent() throws IOException {
+    this.fileContents = removeStopWords();
     this.fileContents = this.fileContents.replaceAll("(?:&#[0-9]*;)", " ");
     this.fileContents = this.fileContents.replaceAll("\\,*", "");
     this.fileContents = this.fileContents.replaceAll("\\.*", "");
-  };
+    this.fileContents = this.fileContents.replaceAll("[0-9]+", "");
+    this.fileContents = this.fileContents.replaceAll("\n|\r", " ");
+    this.fileContents = this.fileContents.replaceAll("\"", "");
+    this.fileContents = this.fileContents.replaceAll("&lt;", "");
+    this.fileContents = this.fileContents.replaceAll("&gt;", "");
+    this.fileContents = this.fileContents.replaceAll("\\+", "");
+    this.fileContents = this.fileContents.replaceAll("\\(|\\)", "");
+    this.fileContents = this.fileContents.replaceAll("\\*", "");
+    this.fileContents = this.fileContents.replaceAll("'", "");
+    this.fileContents = this.fileContents.replaceAll("&amp;", "");
+    this.fileContents = this.fileContents.replaceAll("-", "");
+    FileWriter fileWriter = new FileWriter("Samplefile.txt");
+    fileWriter.write(fileContents);
+    fileWriter.close();
 
-  *//**
-   * Splits the file contents.
-   * Compression techniques are here.
-   * Document ID is parsed using the NEWID tag.
-   * We remove the html tags, and split by parsing the REUTERS HEADER.
-   * WE apply the stemmer here, after that the documents are normalized/tokenized.
-   *//*
-  private void splitFileContents() {
-    // Consists of docId and list of all documents
-    this.documentList = new ArrayList<Tuple>();
-
-    // Splitting string by keeping delimiter
-    List<String> news = new ArrayList<String>();
-
-    news.addAll(Arrays.asList(this.fileContents.split("(?=(?:<REUTERS)(?:.)+(?:NEWID=\".+\">))+")));
-
-    news.remove(0);
-
-    //For each word in the news.
-    for (String tokens : news) {
-      String docID = parseDocumentID(tokens.split("\n")[0]);
-      tokens = Jsoup.clean(tokens, Whitelist.none());
-      tokens = cleanToken(tokens);
-
-      //COMPRESSION TECHNIQUES
-      tokens = removeNumbers(tokens);
-      tokens = caseFolding(tokens);
-      //tokens = apply30stopwords(tokens);
-      //tokens = apply150stopwords(tokens);
-
-      //Splits to get the terms.
-      String[] terms = tokens.split("\\s");
-
-      //filling up the documentlist.
-      Tuple docIndex = new Tuple(docID, terms);
-      this.documentList.add(docIndex);
+  }
+  // TODO: Make RecordNum as DocID while splitting.
+  //  TODO: Sort the terms and merge the common documents.
+  //  TODO: Make the term as key, tuple as value.
+  // TODO: I think one way to associate docID is by getting docId here and immediately creating the Posting out of that
+  //  before sending it for read to document reader. So for every iteration, we would have the docId before the file is even read.
+  /*public void indexingTerms() {
+      // change the string into array and for each term, add in hashmap
+    HashMap<String, Tuple> map = new HashMap<>();
+    for (int i = 0; i < fileContents.length(); i++) {
+       if(!map.containsKey(fileContents[i])) {
+          Posting posting = new Posting();
+          posting.setDocumentID(documentID);
+          List<Posting> postings = new ArrayList<>();
+          postings.add(posting);
+          Tuple tuple = new Tuple();
+          tuple.setPostings(postings);
+          tuple.setFrequencyOfTerms(1);
+          map.put(fileContents[i], tuple);
+       }
+       else {
+         Tuple tuple = map.get(fileContents[i]);
+         Posting posting = new Posting();
+         posting.setDocumentID(docID);
+         tuple.getPostings().add(posting);
+         tuple.setFrequencyOfTerms(tuple.getFrequencyOfTerms()+1);
+         map.put(fileContents[i], tuple);
+       }
     }
-
-    //PorterStemmer
-    //applyStemmer();
-  }
-  *//**
-   * Removing useless special characters found in the collection that were interfering with the creating of a good index.
-   * @param tokens the string to clean
-   * @return the cleaned token.
-   *//*
-  private static String cleanToken(String tokens){
-    tokens = tokens.replaceAll("\n|\r", " ");
-    tokens = tokens.replaceAll("\"", "");
-    tokens = tokens.replaceAll("&lt;", "");
-    tokens = tokens.replaceAll("&gt;", "");
-    tokens = tokens.replaceAll("\\+", "");
-    tokens = tokens.replaceAll("\\(|\\)", "");
-    tokens = tokens.replaceAll("\\*", "");
-    tokens = tokens.replaceAll("'", "");
-    tokens = tokens.replaceAll("&amp;", "");
-    tokens = tokens.replaceAll("-", "");
-    return tokens;
-  }
-
-
-  //COMPRESSION TECHNIQUES
-  private static String removeNumbers(String tokens){
-    tokens = tokens.replaceAll("[0-9]+", "");
-    return tokens;
-  }
-
-  private static String caseFolding(String tokens){
-    tokens = tokens.toLowerCase();
-    return tokens;
-  }
-
-  @SuppressWarnings("unused")
-  private static String apply30stopwords(String tokens){
-    tokens = removeStopWords(tokens,30);
-    return tokens;
-  }
-
-  @SuppressWarnings("unused")
-  private static String apply150stopwords(String tokens){
-    tokens = removeStopWords(tokens,150);
-    return tokens;
-  }
-
-
-  *//**
-   * Parses the document id from the NEWID tag from the reuters header.
-   * @param reutersHeader
-   * @return the docid (NEWID)
-   *//*
-  private static String parseDocumentID(String reutersHeader) {
-    Document doc = Jsoup.parse(reutersHeader);
-    Element reuters = doc.select("REUTERS").first();
-    return reuters.attr("NEWID");
   }*/
+
+  private String removeStopWords() {
+    try {
+      String[] stopWords = documentReader.getStopWords("./resource/stoplist.txt");
+      ArrayList<String> allWords = Stream.of(this.fileContents.toLowerCase().split(" ")).collect(Collectors.toCollection(ArrayList::new));
+      allWords.removeAll(Arrays.asList(stopWords));
+      String result = allWords.stream().collect(Collectors.joining(" "));
+      return result;
+    } catch (IOException e) {
+      System.err.println(e.getMessage());
+    }
+    return null;
+  }
 }

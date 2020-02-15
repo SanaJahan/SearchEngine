@@ -1,0 +1,3577 @@
+CITATIONS: CITE: author : TURNBULL LS
+d1 : 32
+d2 : 226
+d3 : 978
+num : 2
+publication : CLIN EXP IMMUNOL
+
+CITATIONS: CITE: author : NASH DR
+d1 : 11
+d2 : 49
+d3 : 979
+num : 3
+publication : ANN CLIN RES
+
+CITATIONS: CITE: author : PALUCH E
+d1 : 23
+d2 : 42
+d3 : 979
+num : 4
+publication : INT J CANCER
+
+CITATIONS: CITE: author : MAYANSKY AN
+d1 :
+d2 : 14
+d3 : 979
+num : 5
+publication : ZH MIKROBIO EPIDEMIO IMMUNOBI 1979
+
+CITATIONS: CITE: author : STOCKLEY RA
+d1 : 35
+d2 : 202
+d3 : 980
+num : 6
+publication : THORAX
+
+CITATIONS: CITE: author : STOCKLEY RA
+d1 : 38
+d2 : 151
+d3 : 980
+num : 7
+publication : J IMMUNOL METH
+
+CITATIONS: CITE: author : STOCKLEY RA
+d1 : 122
+d2 : 959
+d3 : 980
+num : 8
+publication : AM REV RESPIR DIS
+
+CITATIONS: CITE: author : PUCHELLE E
+d1 : 18
+d2 : 659
+d3 : 981
+num : 9
+publication : BIORHEOLOGY
+
+CITATIONS: CITE: author : CLARKE CW
+d1 : 36
+d2 : 665
+d3 : 981
+num : 10
+publication : THORAX
+
+CITATIONS: CITE: author : PRYJMA J
+d1 : 54
+d2 : 60
+d3 : 985
+num : 11
+publication : ANN ALLERGY
+
+ROOT: RECORD:
+76225
+00578
+76154742
+Kerr-A-A.
+Dead space ventilation in normal children and children with
+obstructive airways diease.
+Thorax. 1976 Feb. 31(1). P 63-9.
+AIRWAY-OBSTRUCTION: pp.RESPIRATORY-DEAD-SPACE.
+ADOLESCENCE.ASTHMA: pp.BODY-HEIGHT.CARBON-DIOXIDE: an.CHILD.CHILD-PRESCHOOL.CYSTIC-FIBROSIS: pp.HUMAN.INSPIRATORY-CAPACITY.LUNG: ph, pp.RESPIRATORY-FUNCTION-TESTS: mt.TIDAL-VOLUME.
+Anatomical dead space was measured in 72 normal children aged from 5
+to 16 years, using the single breath method. There was a linear
+increase in this measurement with height, weight, and end-inspiratory
+lung volume. Physiological dead space was measured in 52 normal
+children using the Bohr equation and substituting a rebreathing PCO2
+for alveolar PCO2. There was a parallel increase in this measurement
+with height, weight, and end-inspiratory lung volume. The difference
+between the two dead space measurements constitutes the alveolar dead
+space and was constant over the whole age range at 45 +/- 22 ml. The
+ratio of physiological dead space to tidal volume was 33-6 +/-4-6%
+and was unaltered by age or change in lung volume. The effect of
+airways obstruction on the dead space volumes was studied in 36
+children with asthma and 28 with cystic fibrosis. Physiological dead
+space increased with increasing airways obstruction. Anatomical dead
+space remained constant in spite of marked increases in lung volume
+associated with the airways obstruction.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RECORD: PAPERNUM: 76225
+RECORD: RECORDNUM: 00578
+RECORD: MEDLINENUM: 76154742
+RECORD: AUTHORS: Kerr-A-A.
+AUTHORS: AUTHOR: Kerr-A-A.
+RECORD: TITLE: Dead space ventilation in normal children and children with
+obstructive airways diease.
+RECORD: SOURCE: Thorax. 1976 Feb. 31(1). P 63-9.
+RECORD: MAJORSUBJ: AIRWAY-OBSTRUCTION: pp.RESPIRATORY-DEAD-SPACE.
+MAJORSUBJ: TOPIC: AIRWAY-OBSTRUCTION: pp.
+MAJORSUBJ: TOPIC: RESPIRATORY-DEAD-SPACE.
+RECORD: MINORSUBJ: ADOLESCENCE.ASTHMA: pp.BODY-HEIGHT.CARBON-DIOXIDE: an.CHILD.CHILD-PRESCHOOL.CYSTIC-FIBROSIS: pp.HUMAN.INSPIRATORY-CAPACITY.LUNG: ph, pp.RESPIRATORY-FUNCTION-TESTS: mt.TIDAL-VOLUME.
+MINORSUBJ: TOPIC: ADOLESCENCE.
+MINORSUBJ: TOPIC: ASTHMA: pp.
+MINORSUBJ: TOPIC: BODY-HEIGHT.
+MINORSUBJ: TOPIC: CARBON-DIOXIDE: an.
+MINORSUBJ: TOPIC: CHILD.
+MINORSUBJ: TOPIC: CHILD-PRESCHOOL.
+MINORSUBJ: TOPIC: CYSTIC-FIBROSIS: pp.
+MINORSUBJ: TOPIC: HUMAN.
+MINORSUBJ: TOPIC: INSPIRATORY-CAPACITY.
+MINORSUBJ: TOPIC: LUNG: ph, pp.
+MINORSUBJ: TOPIC: RESPIRATORY-FUNCTION-TESTS: mt.
+MINORSUBJ: TOPIC: TIDAL-VOLUME.
+RECORD: ABSTRACT: Anatomical dead space was measured in 72 normal children aged from 5
+to 16 years, using the single breath method. There was a linear
+increase in this measurement with height, weight, and end-inspiratory
+lung volume. Physiological dead space was measured in 52 normal
+children using the Bohr equation and substituting a rebreathing PCO2
+for alveolar PCO2. There was a parallel increase in this measurement
+with height, weight, and end-inspiratory lung volume. The difference
+between the two dead space measurements constitutes the alveolar dead
+space and was constant over the whole age range at 45 +/- 22 ml. The
+ratio of physiological dead space to tidal volume was 33-6 +/-4-6%
+and was unaltered by age or change in lung volume. The effect of
+airways obstruction on the dead space volumes was studied in 36
+children with asthma and 28 with cystic fibrosis. Physiological dead
+space increased with increasing airways obstruction. Anatomical dead
+space remained constant in spite of marked increases in lung volume
+associated with the airways obstruction.
+RECORD: REFERENCES:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REFERENCES: CITE: author : BARTELS J
+d1 : 33
+d2 : 41
+d3 : 954
+num : 1
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : BEAUDRY PH
+d1 : 95
+d2 : 248
+d3 : 967
+num : 2
+publication : AM REV RESPIR DIS
+
+REFERENCES: CITE: author : BODIAN M
+d1 :
+d2 :
+d3 : 952
+num : 3
+publication : FIBROCYSTIC DIS OF THE PANCRE
+
+REFERENCES: CITE: author : COLLIER CR
+d1 : 9
+d2 : 25
+d3 : 956
+num : 4
+publication : J APPL PHYSIOL
+
+REFERENCES: CITE: author : COMROE JH JR
+d1 :
+d2 :
+d3 : 962
+num : 5
+publication : LUNG CLINICAL PHYSIOLOGY AND
+
+REFERENCES: CITE: author : COOK CD
+d1 : 34
+d2 : 975
+d3 : 955
+num : 6
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : COOK CD
+d1 :
+d2 : 32
+d3 : 968
+num : 7
+publication : IN: SMITH RM
+
+REFERENCES: CITE: author : DOWNES JJ
+d1 : 19
+d2 : 423
+d3 : 972
+num : 8
+publication : PEDIATR CLIN NORTH AM
+
+REFERENCES: CITE: author : DUBOIS AB
+d1 : 35
+d2 : 322
+d3 : 956
+num : 9
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : FOWLER WS
+d1 : 154
+d2 : 405
+d3 : 948
+num : 10
+publication : AM J PHYSIOL
+
+REFERENCES: CITE: author : HARRIS EA
+d1 : 15
+d2 : 375
+d3 : 973
+num : 11
+publication : CLIN SCI MOL MED
+
+REFERENCES: CITE: author : HART MC
+d1 : 18
+d2 : 519
+d3 : 963
+num : 12
+publication : J APPL PHYSIOL
+
+REFERENCES: CITE: author : LEVINE G
+d1 : 282
+d2 : 1277
+d3 : 970
+num : 13
+publication : N ENGL J MED
+
+REFERENCES: CITE: author : LEVISON H
+d1 : 101
+d2 : 972
+d3 : 970
+num : 14
+publication : AM REV RESPIR DIS
+
+REFERENCES: CITE: author : LIFSHAY A
+d1 : 31
+d2 : 478
+d3 : 971
+num : 15
+publication : J APPL PHYSIOL
+
+REFERENCES: CITE: author : MCEVOY JDS
+d1 : 4
+d2 : 687
+d3 : 974
+num : 16
+publication : BR MED J
+
+REFERENCES: CITE: author : MELLEMGAARD K
+d1 : 67
+d2 : 10
+d3 : 966
+num : 17
+publication : ACTA PHYSIOL SCAND
+
+REFERENCES: CITE: author : NELSON NM
+d1 : 30
+d2 : 963
+d3 : 962
+num : 18
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : OLSEN CR
+d1 : 23
+d2 : 27
+d3 : 967
+num : 19
+publication : J APPL PHYSIOL
+
+REFERENCES: CITE: author : POLGAR G
+d1 :
+d2 :
+d3 : 971
+num : 20
+publication : PULMONARY FUNCTION TESTING IN
+
+REFERENCES: CITE: author : RADFORD EP JR
+d1 : 7
+d2 : 451
+d3 : 955
+num : 21
+publication : J APPL PHYSIOL
+
+REFERENCES: CITE: author : RAINE JM
+d1 : 18
+d2 : 284
+d3 : 963
+num : 22
+publication : J APPL PHYSIOL
+
+REFERENCES: CITE: author : ROBINSON S
+d1 : 10
+d2 : 251
+d3 : 938
+num : 23
+publication : ARBEITSPHYSIOLOGIE
+
+REFERENCES: CITE: author : SHEPARD RH
+d1 : 18
+d2 : 284
+d3 : 957
+num : 24
+publication : J APPL PHYSIOL
+
+REFERENCES: CITE: author : STRANG LB
+d1 : 21
+d2 : 107
+d3 : 961
+num : 25
+publication : CLIN SCI
+
+REFERENCES: CITE: author : YOUNG AC
+d1 : 8
+d2 : 91
+d3 : 955
+num : 26
+publication : J APPL PHYSIOL
+
+RECORD: CITATIONS:
+
+
+
+CITATIONS: CITE: author : SWINSCOW TDV
+d1 : 2
+d2 : 680
+d3 : 976
+num : 1
+publication : BR MED J
+
+CITATIONS: CITE: author : HANCOX AJ
+d1 : 20
+d2 : 58
+d3 : 982
+num : 2
+publication : MED BIOL ENG COMPUT
+
+CITATIONS: CITE: author : REISER J
+d1 : 2
+d2 : 237
+d3 : 986
+num : 3
+publication : PEDIATR PULMONOL
+
+ROOT: RECORD:
+76226
+00579
+77060072
+Matthay-M-A.Matthay-R-A.Mills-D-M.Lakshminarayan-S.Cotton-E.
+Hypertrophic osteoarthropathy in adults with cystic fibrosis.
+Thorax. 1976 Oct. 31(5). P 572-5.
+CYSTIC-FIBROSIS: co.OSTEOARTHROPATHY-SECONDARY-HYPERTROPHIC: di.
+ADULT.ARTHRITIS: di.CASE-REPORT.CYSTIC-FIBROSIS: ra.DIAGNOSIS-DIFFERENTIAL.FIBULA: ra.HUMAN.MALE.OSTEOARTHROPATHY-SECONDARY-HYPERTROPHIC: ra.TIBIA: ra.
+Three adult patients with cystic fibrosis presented with arthralgia,
+and investigation for the usual causes of arthritis proved negative.
+Radiographs of long bones revealed periostitis and new bone fromation
+characteristic of hypertrophic osteoarthropathy. Symptomatic
+improvement occurred after analgesic and anti-inflammatory therapy.
+In patients with cystic fibrosis and bone or joint pain, the
+diagnosis of hypertrophic osteoarthropathy should be considered and
+long bone radiographs obtained.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RECORD: PAPERNUM: 76226
+RECORD: RECORDNUM: 00579
+RECORD: MEDLINENUM: 77060072
+RECORD: AUTHORS: Matthay-M-A.Matthay-R-A.Mills-D-M.Lakshminarayan-S.Cotton-E.
+AUTHORS: AUTHOR: Matthay-M-A.
+AUTHORS: AUTHOR: Matthay-R-A.
+AUTHORS: AUTHOR: Mills-D-M.
+AUTHORS: AUTHOR: Lakshminarayan-S.
+AUTHORS: AUTHOR: Cotton-E.
+RECORD: TITLE: Hypertrophic osteoarthropathy in adults with cystic fibrosis.
+RECORD: SOURCE: Thorax. 1976 Oct. 31(5). P 572-5.
+RECORD: MAJORSUBJ: CYSTIC-FIBROSIS: co.OSTEOARTHROPATHY-SECONDARY-HYPERTROPHIC: di.
+MAJORSUBJ: TOPIC: CYSTIC-FIBROSIS: co.
+MAJORSUBJ: TOPIC: OSTEOARTHROPATHY-SECONDARY-HYPERTROPHIC: di.
+RECORD: MINORSUBJ: ADULT.ARTHRITIS: di.CASE-REPORT.CYSTIC-FIBROSIS: ra.DIAGNOSIS-DIFFERENTIAL.FIBULA: ra.HUMAN.MALE.OSTEOARTHROPATHY-SECONDARY-HYPERTROPHIC: ra.TIBIA: ra.
+MINORSUBJ: TOPIC: ADULT.
+MINORSUBJ: TOPIC: ARTHRITIS: di.
+MINORSUBJ: TOPIC: CASE-REPORT.
+MINORSUBJ: TOPIC: CYSTIC-FIBROSIS: ra.
+MINORSUBJ: TOPIC: DIAGNOSIS-DIFFERENTIAL.
+MINORSUBJ: TOPIC: FIBULA: ra.
+MINORSUBJ: TOPIC: HUMAN.
+MINORSUBJ: TOPIC: MALE.
+MINORSUBJ: TOPIC: OSTEOARTHROPATHY-SECONDARY-HYPERTROPHIC: ra.
+MINORSUBJ: TOPIC: TIBIA: ra.
+RECORD: ABSTRACT: Three adult patients with cystic fibrosis presented with arthralgia,
+and investigation for the usual causes of arthritis proved negative.
+Radiographs of long bones revealed periostitis and new bone fromation
+characteristic of hypertrophic osteoarthropathy. Symptomatic
+improvement occurred after analgesic and anti-inflammatory therapy.
+In patients with cystic fibrosis and bone or joint pain, the
+diagnosis of hypertrophic osteoarthropathy should be considered and
+long bone radiographs obtained.
+RECORD: REFERENCES:
+
+
+
+
+
+
+
+
+
+
+
+
+REFERENCES: CITE: author : BAMBERGER E
+d1 : 2
+d2 : 226
+d3 : 889
+num : 1
+publication : WIEN KLIN WOCHENSCHR
+
+REFERENCES: CITE: author : COATES EO JR
+d1 : 49
+d2 : 195
+d3 : 966
+num : 2
+publication : DIS CHEST
+
+REFERENCES: CITE: author : FISCHER DS
+d1 : 43
+d2 : 459
+d3 : 956
+num : 3
+publication : MEDICINE
+
+REFERENCES: CITE: author : GOODMAN DH
+d1 : 25
+d2 : 224
+d3 : 967
+num : 4
+publication : ANN ALLERGY
+
+REFERENCES: CITE: author : GROSSMAN H
+d1 : 107
+d2 : 1
+d3 : 964
+num : 5
+publication : AM J DIS CHILD
+
+REFERENCES: CITE: author : HAMMARSTEN JF
+d1 : 99
+d2 : 421
+d3 : 957
+num : 6
+publication : ARCH INTERN MED
+
+REFERENCES: CITE: author : JONES JD
+d1 : 45
+d2 : 768
+d3 : 970
+num : 7
+publication : MAYO CLIN PROC
+
+REFERENCES: CITE: author : KOPEL FB
+d1 : 62
+d2 : 483
+d3 : 972
+num : 8
+publication : GASTROENTEROLOGY
+
+REFERENCES: CITE: author : MARIE P
+d1 : 10
+d2 : 1
+d3 : 890
+num : 9
+publication : REV MEDEC
+
+REFERENCES: CITE: author : SHAPIRO RF
+d1 : 63
+d2 : 912
+d3 : 972
+num : 10
+publication : CHEST
+
+REFERENCES: CITE: author : STANLEY NN
+d1 : 33
+d2 : 469
+d3 : 971
+num : 11
+publication : BR HEART J
+
+REFERENCES: CITE: author : TREVER RW
+d1 : 48
+d2 : 660
+d3 : 958
+num : 12
+publication : ANN INTERN MED
+
+RECORD: CITATIONS:
+
+
+
+
+
+
+
+
+
+CITATIONS: CITE: author : ANON
+d1 : 2
+d2 : 785
+d3 : 977
+num : 1
+publication : BR MED J
+
+CITATIONS: CITE: author : SAGRANSKY DM
+d1 : 134
+d2 : 319
+d3 : 980
+num : 2
+publication : AM J DIS CHILD
+
+CITATIONS: CITE: author : DELUMLEY L
+d1 : 40
+d2 : 723
+d3 : 983
+num : 3
+publication : ARCH FR PEDIATR
+
+CITATIONS: CITE: author : BRADFORD R
+d1 : 78
+d2 : 275
+d3 : 984
+num : 4
+publication : BR J DIS CHEST
+
+CITATIONS: CITE: author : BRAUDE S
+d1 : 288
+d2 : 822
+d3 : 984
+num : 5
+publication : BR MED J
+
+CITATIONS: CITE: author : RUSH PJ
+d1 : 15
+d2 : 213
+d3 : 986
+num : 6
+publication : SEM ARTHRITIS RHEUM
+
+CITATIONS: CITE: author : SUMMERS GD
+d1 : 25
+d2 : 393
+d3 : 986
+num : 7
+publication : BR J RHEUMATOL
+
+CITATIONS: CITE: author : PHILLIPS BM
+d1 : 79
+d2 : 44
+d3 : 986
+num : 8
+publication : J ROY SOC MED
+
+CITATIONS: CITE: author : COHEN AM
+d1 : 140
+d2 : 74
+d3 : 986
+num : 9
+publication : AM J DIS CHILD
+
+ROOT: RECORD:
+76227
+00580
+76272091
+Islam-N.
+The differential diagnosis of bronchial asthma in children.
+Trop-Doct. 1976 Jul. 6(3). P 105-7.
+ASTHMA: di.
+ACUTE-DISEASE.BRONCHIOLITIS-VIRAL: di.BRONCHITIS: di.BRONCHOGRAPHY.CHILD.CYSTIC-FIBROSIS: di.DIAGNOSIS-DIFFERENTIAL.FOREIGN-BODIES: ra.HELMINTHIASIS: di.HUMAN.PERIARTERITIS-NODOSA: di.TUBERCULOSIS-PULMONARY: di.
+Bronchial asthma in children is not uncommon in the tropics.
+Conditions simulating this disease in the tropics have been discussed
+with a view to arriving at a diagnosis without sophisticated
+investigations.
+
+
+
+
+
+
+RECORD: PAPERNUM: 76227
+RECORD: RECORDNUM: 00580
+RECORD: MEDLINENUM: 76272091
+RECORD: AUTHORS: Islam-N.
+AUTHORS: AUTHOR: Islam-N.
+RECORD: TITLE: The differential diagnosis of bronchial asthma in children.
+RECORD: SOURCE: Trop-Doct. 1976 Jul. 6(3). P 105-7.
+RECORD: MAJORSUBJ: ASTHMA: di.
+MAJORSUBJ: TOPIC: ASTHMA: di.
+RECORD: MINORSUBJ: ACUTE-DISEASE.BRONCHIOLITIS-VIRAL: di.BRONCHITIS: di.BRONCHOGRAPHY.CHILD.CYSTIC-FIBROSIS: di.DIAGNOSIS-DIFFERENTIAL.FOREIGN-BODIES: ra.HELMINTHIASIS: di.HUMAN.PERIARTERITIS-NODOSA: di.TUBERCULOSIS-PULMONARY: di.
+MINORSUBJ: TOPIC: ACUTE-DISEASE.
+MINORSUBJ: TOPIC: BRONCHIOLITIS-VIRAL: di.
+MINORSUBJ: TOPIC: BRONCHITIS: di.
+MINORSUBJ: TOPIC: BRONCHOGRAPHY.
+MINORSUBJ: TOPIC: CHILD.
+MINORSUBJ: TOPIC: CYSTIC-FIBROSIS: di.
+MINORSUBJ: TOPIC: DIAGNOSIS-DIFFERENTIAL.
+MINORSUBJ: TOPIC: FOREIGN-BODIES: ra.
+MINORSUBJ: TOPIC: HELMINTHIASIS: di.
+MINORSUBJ: TOPIC: HUMAN.
+MINORSUBJ: TOPIC: PERIARTERITIS-NODOSA: di.
+MINORSUBJ: TOPIC: TUBERCULOSIS-PULMONARY: di.
+RECORD: ABSTRACT: Bronchial asthma in children is not uncommon in the tropics.
+Conditions simulating this disease in the tropics have been discussed
+with a view to arriving at a diagnosis without sophisticated
+investigations.
+RECORD: REFERENCES:
+
+
+
+
+REFERENCES: CITE: author : HASAN M
+d1 :
+d2 :
+d3 : 975
+num : 1
+publication : DISSERTATION
+
+REFERENCES: CITE: author : ISLAM N
+d1 :
+d2 : 96
+d3 : 964
+num : 2
+publication : TROPICAL EOSINOPHILIA
+
+REFERENCES: CITE: author : MOSLER
+d1 : 2
+d2 : 222
+d3 : 876
+num : 3
+publication : CITED IN: LEUCKART R
+
+REFERENCES: CITE: author : TULLIS DCH
+d1 : 282
+d2 : 370
+d3 : 970
+num : 4
+publication : N ENGL J MED
+
+ROOT: RECORD:
+76228
+00581
+77129620
+Bieri-J-G.Farrell-P-M.
+Vitamin E.
+Vitam-Horm. 1976. 34. P 31-75. (REVIEW).
+VITAMIN-E: me.
+ANIMAL.ANTIOXIDANTS: me.BLOOD-COAGULATION.CORONARY-DISEASE: me.CYSTIC-FIBROSIS: me.DIET.DIETARY-FATS: me.ERYTHROCYTES: me.FATTY-ACIDS-UNSATURATED: me.HEMOGLOBINS: me.HUMAN.INFANT-NEWBORN.INFANT-PREMATURE.LIPOPROTEINS: me.LYMPH: me.MALABSORPTION-SYNDROMES: me.PROTEIN-CALORIE-MALNUTRITION: me.PROTEINS: bi.RETROLENTAL-FIBROPLASIA: me.REVIEW.CELIAC-DISEASE: me.VITAMIN-E-DEFICIENCY: me, th.VITAMIN-E: tu.
+In this review, we make a deliberate attempt to put all the
+information on vitamin E requirement, absorption, metabolism, and
+function in both animals and man in better perspective.  The large
+clinical trials in which vitamin E was given at pharmacological
+levels for presumed medical indications, as well as trials of vitamin
+E for bona fide deficiency disease in man, will be extensively
+reviewed.  Nutritional aspects discussed include dietary intake,
+biological activity, the evaluation of nutritional status, and the
+relationship to dietary polyunsaturated fatty acids.  Metabolism
+concerns include absorption, transport and deposition, and cellular
+function.  Clinical aspects include deficiency states, approaches to
+therapy, and possible pharmacological effects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RECORD: PAPERNUM: 76228
+RECORD: RECORDNUM: 00581
+RECORD: MEDLINENUM: 77129620
+RECORD: AUTHORS: Bieri-J-G.Farrell-P-M.
+AUTHORS: AUTHOR: Bieri-J-G.
+AUTHORS: AUTHOR: Farrell-P-M.
+RECORD: TITLE: Vitamin E.
+RECORD: SOURCE: Vitam-Horm. 1976. 34. P 31-75. (REVIEW).
+RECORD: MAJORSUBJ: VITAMIN-E: me.
+MAJORSUBJ: TOPIC: VITAMIN-E: me.
+RECORD: MINORSUBJ: ANIMAL.ANTIOXIDANTS: me.BLOOD-COAGULATION.CORONARY-DISEASE: me.CYSTIC-FIBROSIS: me.DIET.DIETARY-FATS: me.ERYTHROCYTES: me.FATTY-ACIDS-UNSATURATED: me.HEMOGLOBINS: me.HUMAN.INFANT-NEWBORN.INFANT-PREMATURE.LIPOPROTEINS: me.LYMPH: me.MALABSORPTION-SYNDROMES: me.PROTEIN-CALORIE-MALNUTRITION: me.PROTEINS: bi.RETROLENTAL-FIBROPLASIA: me.REVIEW.CELIAC-DISEASE: me.VITAMIN-E-DEFICIENCY: me, th.VITAMIN-E: tu.
+MINORSUBJ: TOPIC: ANIMAL.
+MINORSUBJ: TOPIC: ANTIOXIDANTS: me.
+MINORSUBJ: TOPIC: BLOOD-COAGULATION.
+MINORSUBJ: TOPIC: CORONARY-DISEASE: me.
+MINORSUBJ: TOPIC: CYSTIC-FIBROSIS: me.
+MINORSUBJ: TOPIC: DIET.
+MINORSUBJ: TOPIC: DIETARY-FATS: me.
+MINORSUBJ: TOPIC: ERYTHROCYTES: me.
+MINORSUBJ: TOPIC: FATTY-ACIDS-UNSATURATED: me.
+MINORSUBJ: TOPIC: HEMOGLOBINS: me.
+MINORSUBJ: TOPIC: HUMAN.
+MINORSUBJ: TOPIC: INFANT-NEWBORN.
+MINORSUBJ: TOPIC: INFANT-PREMATURE.
+MINORSUBJ: TOPIC: LIPOPROTEINS: me.
+MINORSUBJ: TOPIC: LYMPH: me.
+MINORSUBJ: TOPIC: MALABSORPTION-SYNDROMES: me.
+MINORSUBJ: TOPIC: PROTEIN-CALORIE-MALNUTRITION: me.
+MINORSUBJ: TOPIC: PROTEINS: bi.
+MINORSUBJ: TOPIC: RETROLENTAL-FIBROPLASIA: me.
+MINORSUBJ: TOPIC: REVIEW.
+MINORSUBJ: TOPIC: CELIAC-DISEASE: me.
+MINORSUBJ: TOPIC: VITAMIN-E-DEFICIENCY: me, th.
+MINORSUBJ: TOPIC: VITAMIN-E: tu.
+RECORD: EXTRACT: In this review, we make a deliberate attempt to put all the
+information on vitamin E requirement, absorption, metabolism, and
+function in both animals and man in better perspective.  The large
+clinical trials in which vitamin E was given at pharmacological
+levels for presumed medical indications, as well as trials of vitamin
+E for bona fide deficiency disease in man, will be extensively
+reviewed.  Nutritional aspects discussed include dietary intake,
+biological activity, the evaluation of nutritional status, and the
+relationship to dietary polyunsaturated fatty acids.  Metabolism
+concerns include absorption, transport and deposition, and cellular
+function.  Clinical aspects include deficiency states, approaches to
+therapy, and possible pharmacological effects.
+RECORD: REFERENCES:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REFERENCES: CITE: author : ABRAMS AA
+d1 : 272
+d2 : 1080
+d3 : 965
+num : 1
+publication : N ENGL J MED
+
+REFERENCES: CITE: author : ABRAMS BA
+d1 : 48
+d2 : 721
+d3 : 973
+num : 2
+publication : ARCH DIS CHILD
+
+REFERENCES: CITE: author : ANDERSON TW
+d1 : 110
+d2 : 401
+d3 : 974
+num : 3
+publication : CAN MED ASSOC J
+
+REFERENCES: CITE: author : ANDERSON TW
+d1 : 27
+d2 : 1174
+d3 : 974
+num : 4
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : ARMSTRONG D
+d1 : 98
+d2 : 3
+d3 : 973
+num : 5
+publication : AM NEUROL ASSOC
+
+REFERENCES: CITE: author : BAER S
+d1 : 139
+d2 : 733
+d3 : 949
+num : 6
+publication : JAMA
+
+REFERENCES: CITE: author : BAKER SJ
+d1 : 32
+d2 : 717
+d3 : 968
+num : 7
+publication : BLOOD
+
+REFERENCES: CITE: author : BARNESS LA
+d1 : 21
+d2 : 40
+d3 : 968
+num : 8
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : BASSEN FA
+d1 : 5
+d2 : 381
+d3 : 950
+num : 9
+publication : BLOOD
+
+REFERENCES: CITE: author : BAUERNFEIND JC
+d1 : 27
+d2 : 234
+d3 : 974
+num : 10
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : BIERI JG
+d1 :
+d2 : 307
+d3 : 969
+num : 11
+publication : IN: DE LUCA HF
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 203
+d2 : 181
+d3 : 972
+num : 12
+publication : ANN NY ACAD SCI
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 62
+d2 : 147
+d3 : 973
+num : 13
+publication : J AM DIET ASSOC
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 34
+d2 : 913
+d3 : 975
+num : 14
+publication : FED PROC
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 149
+d2 : 500
+d3 : 975
+num : 15
+publication : PROC SOC EXP BIOL MED
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 66
+d2 : 134
+d3 : 975
+num : 16
+publication : J AM DIET ASSOC
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 100
+d2 : 557
+d3 : 970
+num : 17
+publication : J NUTR
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 40
+d2 : 344
+d3 : 970
+num : 18
+publication : INT J VITAM RES
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 120
+d2 : 554
+d3 : 965
+num : 19
+publication : PROC SOC EXP BIOL MED
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 117
+d2 : 131
+d3 : 964
+num : 20
+publication : PROC SOC EXP BIOL MED
+
+REFERENCES: CITE: author : BIERI JG
+d1 : 106
+d2 : 124
+d3 : 976
+num : 21
+publication : J NUTR
+
+REFERENCES: CITE: author : BINDER HJ
+d1 : 273
+d2 : 1289
+d3 : 965
+num : 22
+publication : N ENGL J MED
+
+REFERENCES: CITE: author : BLANC WA
+d1 : 22
+d2 : 494
+d3 : 958
+num : 23
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : BLOMSTRAND R
+d1 : 38
+d2 : 328
+d3 : 968
+num : 24
+publication : INT J VITAM RES
+
+REFERENCES: CITE: author : BOYD AM
+d1 : 31B
+d2 : 325
+d3 : 949
+num : 25
+publication : J BONE JOINT SURG
+
+REFERENCES: CITE: author : BRUBACHER G
+d1 : 16
+d2 : 50
+d3 : 967
+num : 26
+publication : WISS VEROEFF DTSCH GES ERNAEH
+
+REFERENCES: CITE: author : BUNNELL RH
+d1 : 17
+d2 : 1
+d3 : 965
+num : 27
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : BUNYAN J
+d1 : 77
+d2 : 47
+d3 : 960
+num : 28
+publication : BIOCHEM J
+
+REFERENCES: CITE: author : BURK RF
+d1 :
+d2 : 335
+d3 : 973
+num : 29
+publication : US ARMY MED RES NUTR LAB REP
+
+REFERENCES: CITE: author : CANTAROW A
+d1 :
+d2 : 180
+d3 : 962
+num : 30
+publication : CLIN BIOCHEM
+
+REFERENCES: CITE: author : CATIGNANI GL
+d1 : 67
+d2 : 66
+d3 : 975
+num : 31
+publication : BIOCHEM BIOPHYS RES COMMUN
+
+REFERENCES: CITE: author : CATIGNANI GL
+d1 :
+d2 :
+d3 : 976
+num : 32
+publication : IN: MACHLIN LJ
+
+REFERENCES: CITE: author : CATIGNANI GL
+d1 : 71
+d2 : 1966
+d3 : 974
+num : 33
+publication : PROC NAT ACAD SCI USA
+
+REFERENCES: CITE: author : CHADD MA
+d1 : 40
+d2 : 610
+d3 : 970
+num : 34
+publication : INT J VITAM RES
+
+REFERENCES: CITE: author : CHEEKE PR
+d1 : 49
+d2 : 169
+d3 : 969
+num : 35
+publication : CAN J ANIM SCI
+
+REFERENCES: CITE: author : CURETON TK
+d1 : 179
+d2 : 628
+d3 : 954
+num : 36
+publication : AM J PHYSIOL
+
+REFERENCES: CITE: author : CURRAN JS
+d1 : 9
+d2 : 364
+d3 : 975
+num : 37
+publication : PEDIATR RES
+
+REFERENCES: CITE: author : DAM H
+d1 : 20
+d2 : 527
+d3 : 962
+num : 38
+publication : VITAM HORM
+
+REFERENCES: CITE: author : DARBY CW
+d1 : 48
+d2 : 72
+d3 : 973
+num : 39
+publication : ARCH DIS CHILD
+
+REFERENCES: CITE: author : DARBY WJ
+d1 : 63
+d2 : 310
+d3 : 946
+num : 40
+publication : PROC SOC EXP BIOL MED
+
+REFERENCES: CITE: author : DARBY WJ
+d1 : 52
+d2 : 328
+d3 : 949
+num : 41
+publication : ANN NY ACAD SCI
+
+REFERENCES: CITE: author : DAVIES T
+d1 : 24
+d2 : 431
+d3 : 969
+num : 42
+publication : CLIN CHIM ACTA
+
+REFERENCES: CITE: author : DAVIS KC
+d1 : 25
+d2 : 933
+d3 : 972
+num : 43
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : DE LEON AS
+d1 : 17
+d2 : 309
+d3 : 970
+num : 44
+publication : PEDIATR CLIN NORTH AM
+
+REFERENCES: CITE: author : DE VILLERS A
+d1 : 51
+d2 : 450
+d3 : 973
+num : 45
+publication : CAN J BIOCHEM
+
+REFERENCES: CITE: author : DICKS-BUSHNELL MW
+d1 : 20
+d2 : 262
+d3 : 967
+num : 46
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : DILLEY RA
+d1 : 2
+d2 : 317
+d3 : 970
+num : 47
+publication : J MEMBR BIOL
+
+REFERENCES: CITE: author : DINNING JS
+d1 : 20
+d2 : 511
+d3 : 962
+num : 48
+publication : VITAM HORM
+
+REFERENCES: CITE: author : DIPLOCK AT
+d1 : 27
+d2 : 995
+d3 : 974
+num : 49
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : DI SANTAGNESE PA
+d1 : 277
+d2 : 1399
+d3 : 967
+num : 50
+publication : N ENGL J MED
+
+REFERENCES: CITE: author : EVARTS RP
+d1 : 9
+d2 : 860
+d3 : 974
+num : 51
+publication : LIPIDS
+
+REFERENCES: CITE: author : FARRELL PM
+d1 : 28
+d2 : 1381
+d3 : 975
+num : 52
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : FARRELL PM
+d1 : 64
+d2 : 150
+d3 : 975
+num : 53
+publication : ACTA PAEDIATR SCAND
+
+REFERENCES: CITE: author : FERGUSON ME
+d1 : 55
+d2 : 205
+d3 : 955
+num : 54
+publication : J NUTR
+
+REFERENCES: CITE: author : FILER LJ JR
+d1 : 21
+d2 : 3
+d3 : 968
+num : 55
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : FILER LJ JR
+d1 : 8
+d2 : 328
+d3 : 951
+num : 56
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : ANON
+d1 :
+d2 :
+d3 : 968
+num : 57
+publication : RECOMMENDED DIETARY ALLOWANCE
+
+REFERENCES: CITE: author : ANON
+d1 :
+d2 :
+d3 : 974
+num : 58
+publication : RECOMMENDED DIETARY ALLOWANCE
+
+REFERENCES: CITE: author : FUKUBA H
+d1 :
+d2 : 63
+d3 : 972
+num : 59
+publication : IN: SHIMAZONO N
+
+REFERENCES: CITE: author : FUKUBA H
+d1 :
+d2 :
+d3 : 975
+num : 60
+publication : PROC SYMP ON INFLUENCE OF ENV
+
+REFERENCES: CITE: author : GALLO-TORRES HE
+d1 : 5
+d2 : 379
+d3 : 970
+num : 61
+publication : LIPIDS
+
+REFERENCES: CITE: author : GLOOR U
+d1 : 49
+d2 : 2303
+d3 : 966
+num : 62
+publication : HELV CHIM ACTA
+
+REFERENCES: CITE: author : GOLDBLOOM RB
+d1 : 82
+d2 : 1114
+d3 : 960
+num : 63
+publication : CAN MED ASSOC J
+
+REFERENCES: CITE: author : GOLDBLOOM RB
+d1 : 32
+d2 : 36
+d3 : 963
+num : 64
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : GORDON HH
+d1 : 62
+d2 : 328
+d3 : 941
+num : 65
+publication : AM J DIS CHILD
+
+REFERENCES: CITE: author : GORDON HH
+d1 :
+d2 : 238
+d3 : 968
+num : 66
+publication : IN: WOHL MG
+
+REFERENCES: CITE: author : GORDON HH
+d1 : 90
+d2 : 669
+d3 : 955
+num : 67
+publication : AM J DIS CHILD
+
+REFERENCES: CITE: author : GORDON HH
+d1 : 21
+d2 : 673
+d3 : 958
+num : 68
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : GROSS S
+d1 : 203
+d2 : 141
+d3 : 972
+num : 69
+publication : ANN NY ACAD SCI
+
+REFERENCES: CITE: author : HAEGER K
+d1 : 2
+d2 : 280
+d3 : 973
+num : 70
+publication : VASA
+
+REFERENCES: CITE: author : HAEGER K
+d1 : 27
+d2 : 1179
+d3 : 974
+num : 71
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : HALSTEAD CH
+d1 : 22
+d2 : 1371
+d3 : 969
+num : 72
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : HAMILTON M
+d1 : 1
+d2 : 367
+d3 : 953
+num : 73
+publication : LANCET
+
+REFERENCES: CITE: author : HARRIES JT
+d1 : 46
+d2 : 341
+d3 : 971
+num : 74
+publication : ARCH DIS CHILD
+
+REFERENCES: CITE: author : HARRIS PL
+d1 : 107
+d2 : 381
+d3 : 961
+num : 75
+publication : PROC SOC EXP BIOL MED
+
+REFERENCES: CITE: author : HARRIS RS
+d1 : 20
+d2 : 603
+d3 : 962
+num : 76
+publication : VITAM HORM
+
+REFERENCES: CITE: author : HASHIM SA
+d1 : 21
+d2 : 7
+d3 : 968
+num : 77
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : HASSAN H
+d1 : 19
+d2 : 147
+d3 : 966
+num : 78
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : HERTING DC
+d1 : 22
+d2 : 147
+d3 : 969
+num : 79
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : HODGES RE
+d1 : 62
+d2 : 638
+d3 : 973
+num : 80
+publication : J AM DIET ASSOC
+
+REFERENCES: CITE: author : HOEKSTRA WG
+d1 : 34
+d2 : 2083
+d3 : 975
+num : 81
+publication : FED PROC FED AM SOC EXP BIOL
+
+REFERENCES: CITE: author : HORWITT MK
+d1 : 8
+d2 : 451
+d3 : 960
+num : 82
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : HORWITT MK
+d1 : 20
+d2 : 541
+d3 : 962
+num : 83
+publication : VITAM HORM
+
+REFERENCES: CITE: author : HORWITT MK
+d1 : 27
+d2 : 1182
+d3 : 974
+num : 84
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : HORWITT MK
+d1 : 26
+d2 : 487
+d3 : 968
+num : 85
+publication : VITAM HORM
+
+REFERENCES: CITE: author : HORWITT MK
+d1 : 203
+d2 : 223
+d3 : 972
+num : 86
+publication : ANN NY ACAD SCI
+
+REFERENCES: CITE: author : HYMAN CB
+d1 : 232
+d2 : 211
+d3 : 974
+num : 87
+publication : ANN NY ACAD SCI
+
+REFERENCES: CITE: author : IKEHATA H
+d1 : 38
+d2 : 253
+d3 : 968
+num : 88
+publication : VITAMINS
+
+REFERENCES: CITE: author : JAGER FC
+d1 : 203
+d2 : 199
+d3 : 972
+num : 89
+publication : ANN NY ACAD SCI
+
+REFERENCES: CITE: author : JOHNSON L
+d1 : 27
+d2 : 1158
+d3 : 974
+num : 90
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : JOHNSON P
+d1 : 1
+d2 : 115
+d3 : 962
+num : 91
+publication : LIFE SCI
+
+REFERENCES: CITE: author : KANNO C
+d1 : 34
+d2 : 878
+d3 : 970
+num : 92
+publication : AGRIC BIOL CHEM
+
+REFERENCES: CITE: author : KATER RMH
+d1 : 23
+d2 : 913
+d3 : 970
+num : 93
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : KATTWINKEL J
+d1 : 82
+d2 : 234
+d3 : 973
+num : 94
+publication : J PEDIATR
+
+REFERENCES: CITE: author : KAYDEN HJ
+d1 : 23
+d2 : 285
+d3 : 972
+num : 95
+publication : ANNU REV MED
+
+REFERENCES: CITE: author : KAYDEN HJ
+d1 : 78
+d2 : 334
+d3 : 965
+num : 96
+publication : TRANS ASSOC AM PHYSICIANS
+
+REFERENCES: CITE: author : KELLEHER J
+d1 : 24
+d2 : 1033
+d3 : 970
+num : 97
+publication : BR J NUTR
+
+REFERENCES: CITE: author : KERNER I
+d1 : 99
+d2 : 597
+d3 : 960
+num : 98
+publication : AM J DIS CHILD
+
+REFERENCES: CITE: author : KINSEY VE
+d1 : 56
+d2 : 481
+d3 : 956
+num : 99
+publication : ARCH OPHTHALMOL
+
+REFERENCES: CITE: author : KINSEY VE
+d1 : 34
+d2 : 1259
+d3 : 951
+num : 100
+publication : AM J OPHTHALMOL
+
+REFERENCES: CITE: author : KLATSKIN G
+d1 : 31
+d2 : 159
+d3 : 952
+num : 101
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : KULAPONGS P
+d1 :
+d2 : 263
+d3 : 975
+num : 102
+publication : IN: OLSON RE
+
+REFERENCES: CITE: author : LARSSON H
+d1 : 1
+d2 : 72
+d3 : 968
+num : 103
+publication : PHARMACOL CLIN
+
+REFERENCES: CITE: author : LEONARD PJ
+d1 : 20
+d2 : 795
+d3 : 967
+num : 104
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : LEONARD PJ
+d1 : 24
+d2 : 388
+d3 : 971
+num : 105
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : LEONARD PJ
+d1 : 7
+d2 : 578
+d3 : 966
+num : 106
+publication : GUT
+
+REFERENCES: CITE: author : LEVIN S
+d1 : 27
+d2 : 578
+d3 : 961
+num : 107
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : LIVINGSTONE PD
+d1 : 2
+d2 : 602
+d3 : 958
+num : 108
+publication : LANCET
+
+REFERENCES: CITE: author : LO SS
+d1 : 48
+d2 : 360
+d3 : 973
+num : 109
+publication : ARCH DIS CHILD
+
+REFERENCES: CITE: author : LOSOWSKY MS
+d1 : 203
+d2 : 212
+d3 : 972
+num : 110
+publication : ANN NY ACAD SCI
+
+REFERENCES: CITE: author : LUCY JA
+d1 : 203
+d2 : 4
+d3 : 972
+num : 111
+publication : ANN NY ACAD SCI
+
+REFERENCES: CITE: author : MCCORMICK EC
+d1 : 1
+d2 : 221
+d3 : 960
+num : 112
+publication : J LIPID RES
+
+REFERENCES: CITE: author : MACDOUGALL LG
+d1 : 80
+d2 : 775
+d3 : 972
+num : 113
+publication : J PEDIATR
+
+REFERENCES: CITE: author : MACHLIN LF
+d1 : 149
+d2 : 275
+d3 : 975
+num : 114
+publication : PROC SOC EXP BIOL MED
+
+REFERENCES: CITE: author : MACKENZIE JB
+d1 : 13
+d2 : 346
+d3 : 954
+num : 115
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : MCLAREN DS
+d1 : 22
+d2 : 863
+d3 : 969
+num : 116
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : MACMAHON MT
+d1 : 38
+d2 : 197
+d3 : 970
+num : 117
+publication : CLIN SCI
+
+REFERENCES: CITE: author : MACMAHON MT
+d1 : 1
+d2 : 161
+d3 : 970
+num : 118
+publication : EUR J CLIN INVEST
+
+REFERENCES: CITE: author : MACMAHON MT
+d1 : 1
+d2 : 288
+d3 : 970
+num : 119
+publication : EUR J CLIN INVEST
+
+REFERENCES: CITE: author : MCWHIRTER WR
+d1 : 64
+d2 : 446
+d3 : 975
+num : 120
+publication : ACTA PAEDIATR SCAND
+
+REFERENCES: CITE: author : MAJAJ AS
+d1 : 12
+d2 : 374
+d3 : 963
+num : 121
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : MARKS J
+d1 : 20
+d2 : 573
+d3 : 962
+num : 122
+publication : VITAM HORM
+
+REFERENCES: CITE: author : MASON KE
+d1 : 5
+d2 : 293
+d3 : 972
+num : 123
+publication : IN: SEBRELL WH JR
+
+REFERENCES: CITE: author : MELHORN DK
+d1 : 74
+d2 : 798
+d3 : 969
+num : 124
+publication : J LAB CLIN MED
+
+REFERENCES: CITE: author : MELHORN DK
+d1 : 79
+d2 : 581
+d3 : 971
+num : 125
+publication : J PEDIATR
+
+REFERENCES: CITE: author : MELHORN DK
+d1 : 37
+d2 : 438
+d3 : 971
+num : 126
+publication : BLOOD
+
+REFERENCES: CITE: author : MELLORS A
+d1 : 20
+d2 : 69
+d3 : 966
+num : 127
+publication : BR J NUTR
+
+REFERENCES: CITE: author : MENGEL CE
+d1 : 46
+d2 : 1715
+d3 : 967
+num : 128
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : MINOT AS
+d1 : 29
+d2 : 772
+d3 : 944
+num : 129
+publication : J LAB CLIN MED
+
+REFERENCES: CITE: author : MODELL CB
+d1 : 3
+d2 : 259
+d3 : 974
+num : 130
+publication : BR MED J
+
+REFERENCES: CITE: author : MOLENAAR I
+d1 : 61
+d2 : 982
+d3 : 969
+num : 131
+publication : PROC NAT ACAD SCI USA
+
+REFERENCES: CITE: author : MOLENAAR I
+d1 : 30
+d2 : 45
+d3 : 972
+num : 132
+publication : VITAM HORM
+
+REFERENCES: CITE: author : MOYER WT
+d1 : 6
+d2 : 893
+d3 : 950
+num : 133
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : MULLER DPR
+d1 : 112
+d2 : 28P
+d3 : 969
+num : 134
+publication : BIOCHEM J
+
+REFERENCES: CITE: author : MULLER DPR
+d1 : 15
+d2 : 966
+d3 : 974
+num : 135
+publication : GUT
+
+REFERENCES: CITE: author : MUNSAT TL
+d1 : 226
+d2 : 1536
+d3 : 973
+num : 136
+publication : JAMA
+
+REFERENCES: CITE: author : MUSTAJOKI P
+d1 : 221
+d2 : 714
+d3 : 972
+num : 137
+publication : JAMA
+
+REFERENCES: CITE: author : NAIR PP
+d1 : 128
+d2 : 411
+d3 : 971
+num : 138
+publication : ARCH INTERN MED
+
+REFERENCES: CITE: author : NEWMARK HL
+d1 : 64
+d2 : 655
+d3 : 975
+num : 139
+publication : J PHARM SCI
+
+REFERENCES: CITE: author : NITOWSKY HM
+d1 : 92
+d2 : 164
+d3 : 956
+num : 140
+publication : AM J DIS CHILD
+
+REFERENCES: CITE: author : NITOWSKY HM
+d1 : 10
+d2 : 368
+d3 : 962
+num : 141
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : NORDOY A
+d1 : 16
+d2 : 386
+d3 : 975
+num : 142
+publication : J LIPID RES
+
+REFERENCES: CITE: author : ANON
+d1 :
+d2 :
+d3 : 966
+num : 143
+publication : NUTRITION SURVEY OF EAST PAKI
+
+REFERENCES: CITE: author : OLSON RE
+d1 : 20
+d2 : 604
+d3 : 967
+num : 144
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : OLSON RE
+d1 : 48
+d2 : 179
+d3 : 973
+num : 145
+publication : CIRCULATION
+
+REFERENCES: CITE: author : OLSON RE
+d1 : 27
+d2 : 1117
+d3 : 974
+num : 146
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : OLSON RE
+d1 :
+d2 : 275
+d3 : 975
+num : 147
+publication : IN: OLSON RE
+
+REFERENCES: CITE: author : OPPENHEIMER EH
+d1 : 98
+d2 : 353
+d3 : 956
+num : 148
+publication : BULL JOHNS HOPKINS HOSP
+
+REFERENCES: CITE: author : OSKI FA
+d1 : 70
+d2 : 211
+d3 : 967
+num : 149
+publication : J PEDIATR
+
+REFERENCES: CITE: author : OSKI FA
+d1 : 21
+d2 : 45
+d3 : 968
+num : 150
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : OSKI FA
+d1 :
+d2 :
+d3 : 972
+num : 151
+publication : HEMATOLOGIC PROBLEMS IN THE N
+
+REFERENCES: CITE: author : OWENS WC
+d1 : 32
+d2 : 1
+d3 : 949
+num : 152
+publication : AM J OPHTHALMOL
+
+REFERENCES: CITE: author : PANOS TC
+d1 : 21
+d2 : 15
+d3 : 968
+num : 153
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : PATNAIK RN
+d1 : 31
+d2 : 1023
+d3 : 975
+num : 154
+publication : EXPERIENTIA
+
+REFERENCES: CITE: author : PEAKE IR
+d1 : 260
+d2 : 679
+d3 : 972
+num : 155
+publication : BIOCHIM BIOPHYS ACTA
+
+REFERENCES: CITE: author : PEARSON CK
+d1 : 24
+d2 : 581
+d3 : 970
+num : 156
+publication : BR J NUTR
+
+REFERENCES: CITE: author : POUKKA RKH
+d1 : 5
+d2 : 757
+d3 : 970
+num : 157
+publication : LIPIDS
+
+REFERENCES: CITE: author : RAJARAM OV
+d1 : 140
+d2 : 509
+d3 : 974
+num : 158
+publication : BIOCHEM J
+
+REFERENCES: CITE: author : RAMIREZ I
+d1 : 26
+d2 : 1045
+d3 : 973
+num : 159
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : RATCLIFFE AH
+d1 : 2
+d2 : 1128
+d3 : 949
+num : 160
+publication : LANCET
+
+REFERENCES: CITE: author : RAVIN IS
+d1 : 240
+d2 : 331
+d3 : 949
+num : 161
+publication : N ENGL J MED
+
+REFERENCES: CITE: author : RICHARDS JE
+d1 : 20
+d2 : 92
+d3 : 957
+num : 162
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : RINZLER SH
+d1 : 1
+d2 : 288
+d3 : 950
+num : 163
+publication : CIRCULATION
+
+REFERENCES: CITE: author : ROSE CS
+d1 : 168
+d2 : 414
+d3 : 952
+num : 164
+publication : AM J PHYSIOL
+
+REFERENCES: CITE: author : RUBINSTEIN HM
+d1 : 23
+d2 : 1
+d3 : 968
+num : 165
+publication : CLIN CHIM ACTA
+
+REFERENCES: CITE: author : SANDSTEAD HH
+d1 : 17
+d2 : 27
+d3 : 965
+num : 166
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : SARTAIN P
+d1 : 60
+d2 : 1371
+d3 : 967
+num : 167
+publication : SOUTH MED J
+
+REFERENCES: CITE: author : SCHMANDKE H
+d1 : 34
+d2 : 312
+d3 : 964
+num : 168
+publication : INT Z VITAMINFORSCH
+
+REFERENCES: CITE: author : SCRIMSHAW NS
+d1 : 164
+d2 : 555
+d3 : 957
+num : 169
+publication : JAMA
+
+REFERENCES: CITE: author : SCRIVER CR
+d1 : 46
+d2 : 493
+d3 : 970
+num : 170
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : SHARMAN IM
+d1 : 26
+d2 : 265
+d3 : 971
+num : 171
+publication : BR J NUTR
+
+REFERENCES: CITE: author : SHUTE WE
+d1 : 160
+d2 : 91
+d3 : 947
+num : 172
+publication : MED REC
+
+REFERENCES: CITE: author : SILBER R
+d1 : 48
+d2 : 2089
+d3 : 969
+num : 173
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : SIMON ER
+d1 : 43
+d2 : 1311
+d3 : 964
+num : 174
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : SMITH CL
+d1 : 26
+d2 : 89
+d3 : 971
+num : 175
+publication : BR J NUTR
+
+REFERENCES: CITE: author : STEINER M
+d1 : 57
+d2 : 732
+d3 : 976
+num : 176
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : STOCKMAN JA
+d1 : 12
+d2 : 163
+d3 : 975
+num : 177
+publication : SEMIN HEMATOL
+
+REFERENCES: CITE: author : TAYLOR BW
+d1 : 48
+d2 : 657
+d3 : 973
+num : 178
+publication : ARCH DIS CHILD
+
+REFERENCES: CITE: author : THANANGKUL O
+d1 : 18
+d2 : 379
+d3 : 966
+num : 179
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : THOMPSON JN
+d1 : 26
+d2 : 1349
+d3 : 973
+num : 180
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : UNDERWOOD BA
+d1 : 6
+d2 : 26
+d3 : 972
+num : 181
+publication : PEDIATR RES
+
+REFERENCES: CITE: author : VOGELSANG A
+d1 : 157
+d2 : 772
+d3 : 946
+num : 182
+publication : NATURE
+
+REFERENCES: CITE: author : VOGTMANN H
+d1 : 13
+d2 : 271
+d3 : 971
+num : 183
+publication : NUTR METAB
+
+REFERENCES: CITE: author : WATSON CJ
+d1 : 131
+d2 : 698
+d3 : 973
+num : 184
+publication : ARCH INTERN MED
+
+REFERENCES: CITE: author : WEBER F
+d1 : 8
+d2 : 54
+d3 : 966
+num : 185
+publication : NUTR DIETA
+
+REFERENCES: CITE: author : WEBER F
+d1 : 245
+d2 : 1
+d3 : 964
+num : 186
+publication : Z ERNAEHRUNGSWISS
+
+REFERENCES: CITE: author : WEINBERG T
+d1 : 34
+d2 : 565
+d3 : 958
+num : 187
+publication : AM J PATHOL
+
+REFERENCES: CITE: author : WEISS P
+d1 : 258
+d2 : 275
+d3 : 969
+num : 188
+publication : AM J MED SCI
+
+REFERENCES: CITE: author : WHITAKER JA
+d1 : 20
+d2 : 783
+d3 : 967
+num : 189
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : WILLIAMS HTG
+d1 : 132
+d2 : 662
+d3 : 971
+num : 190
+publication : SURG GYNECOL OBSTET
+
+REFERENCES: CITE: author : WITTING LA
+d1 : 25
+d2 : 257
+d3 : 972
+num : 191
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : WITTING LA
+d1 : 82
+d2 : 19
+d3 : 964
+num : 192
+publication : J NUTR
+
+REFERENCES: CITE: author : WITTING LA
+d1 : 28
+d2 : 571
+d3 : 975
+num : 193
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : WO CKW
+d1 : 28
+d2 : 808
+d3 : 975
+num : 194
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : WOODRUFF CW
+d1 : 4
+d2 : 597
+d3 : 956
+num : 195
+publication : AM J CLIN NUTR
+
+REFERENCES: CITE: author : WRIGHT SW
+d1 : 7
+d2 : 386
+d3 : 951
+num : 196
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : ZANNOS-MARIOLEA L
+d1 : 26
+d2 : 193
+d3 : 974
+num : 197
+publication : BR J HAEMATOL
+
+RECORD: CITATIONS:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CITATIONS: CITE: author : DONOVAN DH
+d1 : 1
+d2 : 135
+d3 : 977
+num : 1
+publication : TOXICOL LETT
+
+CITATIONS: CITE: author : HOFFMANNOSTENHOF O
+d1 : 2
+d2 : 284
+d3 : 977
+num : 2
+publication : TRENDS BIOCHEM SCI
+
+CITATIONS: CITE: author : TANGNEY CC
+d1 : 17
+d2 : 499
+d3 : 978
+num : 3
+publication : CONTRACEPTION
+
+CITATIONS: CITE: author : CHO S
+d1 : 24
+d2 : 221
+d3 : 978
+num : 4
+publication : J NUTR SCI VITAMINOL
+
+CITATIONS: CITE: author : FARRELL PM
+d1 : 31
+d2 : 1720
+d3 : 978
+num : 5
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : EHRENKRANZ RA
+d1 : 299
+d2 : 564
+d3 : 978
+num : 6
+publication : N ENGL J MED
+
+CITATIONS: CITE: author : LOW H
+d1 : 515
+d2 : 141
+d3 : 978
+num : 7
+publication : BIOCHIM BIOPHYS ACTA
+
+CITATIONS: CITE: author : OGUNMEKAN AO
+d1 : 32
+d2 : 2269
+d3 : 979
+num : 8
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : VATASSERY GT
+d1 : 32
+d2 : 2061
+d3 : 979
+num : 9
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : ASTRUP H
+d1 : 49
+d2 : 186
+d3 : 979
+num : 10
+publication : INT J VIT NUTR RES
+
+CITATIONS: CITE: author : PHELPS DL
+d1 : 63
+d2 : 933
+d3 : 979
+num : 11
+publication : PEDIATRICS
+
+CITATIONS: CITE: author : TURUNEN S
+d1 : 63
+d2 : 455
+d3 : 979
+num : 12
+publication : COMP BIOCHEM PHYSIOL (A)
+
+CITATIONS: CITE: author : KONINGS AWT
+d1 : 80
+d2 : 494
+d3 : 979
+num : 13
+publication : RADIAT RES
+
+CITATIONS: CITE: author : EHRENKRANZ RA
+d1 : 95
+d2 : 873
+d3 : 979
+num : 14
+publication : J PEDIATR
+
+CITATIONS: CITE: author : FARRELL PM
+d1 : 95
+d2 : 869
+d3 : 979
+num : 15
+publication : J PEDIATR
+
+CITATIONS: CITE: author : COHEN N
+d1 : 101
+d2 : 6710
+d3 : 979
+num : 16
+publication : J AM CHEM SOCIETY
+
+CITATIONS: CITE: author : VISSER CM
+d1 : 9
+d2 : 411
+d3 : 980
+num : 17
+publication : BIOORGAN CHEM
+
+CITATIONS: CITE: author : PARRISH DB
+d1 : 13
+d2 : 161
+d3 : 980
+num : 18
+publication : CRC CRIT REV FOOD SCI NUTR
+
+CITATIONS: CITE: author : KAJIWARA M
+d1 : 14
+d2 : 1995
+d3 : 980
+num : 19
+publication : HETEROCYCLES
+
+CITATIONS: CITE: author : BAKER H
+d1 : 21
+d2 : 531
+d3 : 980
+num : 20
+publication : NUTR REP INT
+
+CITATIONS: CITE: author : PRASAD JS
+d1 : 33
+d2 : 606
+d3 : 980
+num : 21
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : BOUGLE D
+d1 : 34
+d2 : 505
+d3 : 980
+num : 22
+publication : ANN NUTR ALIMENT
+
+CITATIONS: CITE: author : NADIGER HA
+d1 : 44
+d2 : 211
+d3 : 980
+num : 23
+publication : BR J NUTR
+
+CITATIONS: CITE: author : OLSON GL
+d1 : 45
+d2 : 803
+d3 : 980
+num : 24
+publication : J ORGANIC CHEM
+
+CITATIONS: CITE: author : KILIAN PL
+d1 : 93
+d2 : 409
+d3 : 980
+num : 25
+publication : BIOCHEM BIOPHYS RES COMMUN
+
+CITATIONS: CITE: author : BURTON GW
+d1 : 102
+d2 : 7791
+d3 : 980
+num : 26
+publication : J AM CHEM SOCIETY
+
+CITATIONS: CITE: author : LAMBERT JR
+d1 : 104
+d2 : 201
+d3 : 980
+num : 27
+publication : ARCH PATHOL LAB MED
+
+CITATIONS: CITE: author : EHRENKRANZ RA
+d1 : 134
+d2 : 1157
+d3 : 980
+num : 28
+publication : AM J DIS CHILD
+
+CITATIONS: CITE: author : BERTONIFREDDARI C
+d1 : 16
+d2 : 169
+d3 : 981
+num : 29
+publication : MECH AGEING DEV
+
+CITATIONS: CITE: author : HESS HH
+d1 : 31
+d2 : 482
+d3 : 981
+num : 30
+publication : LAB ANIM SCI
+
+CITATIONS: CITE: author : BELL EF
+d1 : 34
+d2 : 414
+d3 : 981
+num : 31
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : JANSSON L
+d1 : 34
+d2 : 8
+d3 : 981
+num : 32
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : JANSSON L
+d1 : 70
+d2 : 297
+d3 : 981
+num : 33
+publication : ACTA PAEDIATR SCAND
+
+CITATIONS: CITE: author : BURTON GW
+d1 : 103
+d2 : 6472
+d3 : 981
+num : 34
+publication : J AM CHEM SOCIETY
+
+CITATIONS: CITE: author : BIERI JG
+d1 : 111
+d2 : 458
+d3 : 981
+num : 35
+publication : J NUTR
+
+CITATIONS: CITE: author : NADIGER HA
+d1 : 116
+d2 : 9
+d3 : 981
+num : 36
+publication : CLIN CHIM ACTA
+
+CITATIONS: CITE: author : BATINICHABERLE I
+d1 : 150
+d2 : 147
+d3 : 981
+num : 37
+publication : Z ACKER PFLANZEN
+
+CITATIONS: CITE: author : NODA Y
+d1 : 3
+d2 : 173
+d3 : 982
+num : 38
+publication : NEUROBIOL AGING
+
+CITATIONS: CITE: author : SKLAN D
+d1 : 25
+d2 : 499
+d3 : 982
+num : 39
+publication : NUTR REP INT
+
+CITATIONS: CITE: author : WELCH SC
+d1 : 25
+d2 : 81
+d3 : 982
+num : 40
+publication : J MED CHEM
+
+CITATIONS: CITE: author : WIMALASENA J
+d1 : 31
+d2 : 3455
+d3 : 982
+num : 41
+publication : BIOCHEM PHARMACOL
+
+CITATIONS: CITE: author : MCKENNA MC
+d1 : 35
+d2 : 1010
+d3 : 982
+num : 42
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : WEERAPRADIST W
+d1 : 54
+d2 : 304
+d3 : 982
+num : 43
+publication : ORAL SURG
+
+CITATIONS: CITE: author : SHKLAR G
+d1 : 68
+d2 : 791
+d3 : 982
+num : 44
+publication : J NATL CANCER INST
+
+CITATIONS: CITE: author : PUKLIN JE
+d1 : 89
+d2 : 96
+d3 : 982
+num : 45
+publication : OPHTHALMOLOGY
+
+CITATIONS: CITE: author : GUGGENHEIM MA
+d1 : 100
+d2 : 51
+d3 : 982
+num : 46
+publication : J PEDIATR
+
+CITATIONS: CITE: author : SKLAN D
+d1 : 112
+d2 : 1394
+d3 : 982
+num : 47
+publication : J NUTR
+
+CITATIONS: CITE: author : EHRENKRANZ RA
+d1 : 393
+d2 : 452
+d3 : 982
+num : 48
+publication : ANN NY ACAD SCI
+
+CITATIONS: CITE: author : FARRELL PM
+d1 : 393
+d2 : 96
+d3 : 982
+num : 49
+publication : ANN NY ACAD SCI
+
+CITATIONS: CITE: author : GUGGENHEIM MA
+d1 : 393
+d2 : 84
+d3 : 982
+num : 50
+publication : ANN NY ACAD SCI
+
+CITATIONS: CITE: author : JANSSON L
+d1 :
+d2 : 110
+d3 : 982
+num : 51
+publication : ACTA PAEDIATR SCAND SUPPL 296 1982
+
+CITATIONS: CITE: author : TERAO S
+d1 : 1982
+d2 : 2909
+d3 : 982
+num : 52
+publication : J CHEM SOC PERKIN TRANS I
+
+CITATIONS: CITE: author : PANATTA GB
+d1 : 27
+d2 : 811
+d3 : 983
+num : 53
+publication : NUTR REP INT
+
+CITATIONS: CITE: author : VATASSERY GT
+d1 : 37
+d2 : 1020
+d3 : 983
+num : 54
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : KIM JE
+d1 : 54
+d2 : 305
+d3 : 983
+num : 55
+publication : J PERIODONTOL
+
+CITATIONS: CITE: author : MATHER JP
+d1 : 102
+d2 : 470
+d3 : 983
+num : 56
+publication : ACTA ENDOCRINOL
+
+CITATIONS: CITE: author : TAJIMA K
+d1 : 115
+d2 : 1002
+d3 : 983
+num : 57
+publication : BIOCHEM BIOPHYS RES COMMUN
+
+CITATIONS: CITE: author : BURTON GW
+d1 : 221
+d2 : 281
+d3 : 983
+num : 58
+publication : ARCH BIOCHEM BIOPHYS
+
+CITATIONS: CITE: author : BIERI JG
+d1 : 308
+d2 : 1063
+d3 : 983
+num : 59
+publication : N ENGL J MED
+
+CITATIONS: CITE: author : FULLER PA
+d1 : 4
+d2 : 333
+d3 : 984
+num : 60
+publication : NUTR RES
+
+CITATIONS: CITE: author : TAKEDA K
+d1 : 12
+d2 : 957
+d3 : 984
+num : 61
+publication : CRIT CARE MED
+
+CITATIONS: CITE: author : VOST A
+d1 : 19
+d2 : 423
+d3 : 984
+num : 62
+publication : LIPIDS
+
+CITATIONS: CITE: author : MARTINEZ FE
+d1 : 30
+d2 : 92
+d3 : 984
+num : 63
+publication : J TROP PEDIATR
+
+CITATIONS: CITE: author : GUTCHER GR
+d1 : 40
+d2 : 1078
+d3 : 984
+num : 64
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : BOUGLE D
+d1 : 41
+d2 : 63
+d3 : 984
+num : 65
+publication : ARCH FR PEDIATR
+
+CITATIONS: CITE: author : BIERI JG
+d1 : 61
+d2 : 1917
+d3 : 984
+num : 66
+publication : J AM OIL CHEM SOC
+
+CITATIONS: CITE: author : LABADARIOS D
+d1 : 66
+d2 : 477
+d3 : 984
+num : 67
+publication : S AFR MED J
+
+CITATIONS: CITE: author : LABADARIOS D
+d1 : 80
+d2 : 427
+d3 : 984
+num : 68
+publication : S AFR J SCI
+
+CITATIONS: CITE: author : NAPOLI JL
+d1 : 230
+d2 : 194
+d3 : 984
+num : 69
+publication : ARCH BIOCHEM BIOPHYS
+
+CITATIONS: CITE: author : GUTCHER GR
+d1 : 4
+d2 : 604
+d3 : 985
+num : 70
+publication : J PEDIATR GASTROENTEROL NUTR
+
+CITATIONS: CITE: author : CARPENTER D
+d1 : 5
+d2 : 271
+d3 : 985
+num : 71
+publication : SEM NEUROL
+
+CITATIONS: CITE: author : CARPENTER D
+d1 : 5
+d2 : 283
+d3 : 985
+num : 72
+publication : SEM NEUROL
+
+CITATIONS: CITE: author : LIBONDI T
+d1 : 17
+d2 : 42
+d3 : 985
+num : 73
+publication : OPHTHALM RES
+
+CITATIONS: CITE: author : OBARA H
+d1 : 32
+d2 : 358
+d3 : 985
+num : 74
+publication : CAN ANAESTH SOC J
+
+CITATIONS: CITE: author : OGUNMEKAN AO
+d1 : 37
+d2 : 175
+d3 : 985
+num : 75
+publication : TROP GEOGR MED
+
+CITATIONS: CITE: author : MINO M
+d1 : 41
+d2 : 631
+d3 : 985
+num : 76
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : MCGEE CD
+d1 : 42
+d2 : 432
+d3 : 985
+num : 77
+publication : AM J CLIN NUTR
+
+CITATIONS: CITE: author : SYVAOJA EL
+d1 : 55
+d2 : 159
+d3 : 985
+num : 78
+publication : INT J VIT NUTR RES
+
+CITATIONS: CITE: author : KALVARIA I
+d1 : 1
+d2 : 119
+d3 : 986
+num : 79
+publication : INT J PANCREATOL
+
+CITATIONS: CITE: author : PIERI C
+d1 : 5
+d2 : 21
+d3 : 986
+num : 80
+publication : ARCH GERONTOL GERIATR
+
+CITATIONS: CITE: author : GUTCHER G
+d1 : 10
+d2 : 196
+d3 : 986
+num : 81
+publication : SEM PERINATOL
+
+CITATIONS: CITE: author : VANDEWOUDE MG
+d1 : 10
+d2 : 303
+d3 : 986
+num : 82
+publication : J PARENT ENTERAL NUTR
+
+CITATIONS: CITE: author : HERBETH B
+d1 : 32
+d2 : 1756
+d3 : 986
+num : 83
+publication : CLIN CHEM
+
+CITATIONS: CITE: author : ARANDA JV
+d1 : 33
+d2 : 583
+d3 : 986
+num : 84
+publication : PEDIATR CLIN NORTH AM
+
+ROOT: RECORD:
+76229
+00582
+78098519
+Euler-A-R.Ament-M-E.
+Crohn's disease - a cause of arthritis, oxalate stones and fistulae
+in cystic fibrosis.
+West-J-Med. 1976 Oct. 125(4). P 315-7.
+CYSTIC-FIBROSIS: co.CROHN-DISEASE: co.
+ADOLESCENCE.ARTHRITIS-RHEUMATOID: et.CASE-REPORT.HUMAN.INTESTINAL-FISTULA: et.MALE.URETERAL-CALCULI: et.
+In most patients with cystic fibrosis growth failure occurs because
+of malabsorption or moderate to severe pulmonary disease, or both.
+Occasionally, growth lag is seen in patients that is disproportionate
+to the severity of the primary disease.  Profound growth failure is a
+major characteristic of Crohn's disease in children.  This report
+documents the first association of these two diseases in the same
+patient in the United States and shows how Crohn's disease alters the
+gastrointestinal manifestations of cystic fibrosis.  An adolescent
+patient with cystic fibrosis, anemia, fistulae, arthritis and calcium
+oxalate stones was proven to have Crohn's disease by microscopic
+evaluation of surgically resected terminal ileum and colon.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RECORD: PAPERNUM: 76229
+RECORD: RECORDNUM: 00582
+RECORD: MEDLINENUM: 78098519
+RECORD: AUTHORS: Euler-A-R.Ament-M-E.
+AUTHORS: AUTHOR: Euler-A-R.
+AUTHORS: AUTHOR: Ament-M-E.
+RECORD: TITLE: Crohn's disease - a cause of arthritis, oxalate stones and fistulae
+in cystic fibrosis.
+RECORD: SOURCE: West-J-Med. 1976 Oct. 125(4). P 315-7.
+RECORD: MAJORSUBJ: CYSTIC-FIBROSIS: co.CROHN-DISEASE: co.
+MAJORSUBJ: TOPIC: CYSTIC-FIBROSIS: co.
+MAJORSUBJ: TOPIC: CROHN-DISEASE: co.
+RECORD: MINORSUBJ: ADOLESCENCE.ARTHRITIS-RHEUMATOID: et.CASE-REPORT.HUMAN.INTESTINAL-FISTULA: et.MALE.URETERAL-CALCULI: et.
+MINORSUBJ: TOPIC: ADOLESCENCE.
+MINORSUBJ: TOPIC: ARTHRITIS-RHEUMATOID: et.
+MINORSUBJ: TOPIC: CASE-REPORT.
+MINORSUBJ: TOPIC: HUMAN.
+MINORSUBJ: TOPIC: INTESTINAL-FISTULA: et.
+MINORSUBJ: TOPIC: MALE.
+MINORSUBJ: TOPIC: URETERAL-CALCULI: et.
+RECORD: EXTRACT: In most patients with cystic fibrosis growth failure occurs because
+of malabsorption or moderate to severe pulmonary disease, or both.
+Occasionally, growth lag is seen in patients that is disproportionate
+to the severity of the primary disease.  Profound growth failure is a
+major characteristic of Crohn's disease in children.  This report
+documents the first association of these two diseases in the same
+patient in the United States and shows how Crohn's disease alters the
+gastrointestinal manifestations of cystic fibrosis.  An adolescent
+patient with cystic fibrosis, anemia, fistulae, arthritis and calcium
+oxalate stones was proven to have Crohn's disease by microscopic
+evaluation of surgically resected terminal ileum and colon.
+RECORD: REFERENCES:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REFERENCES: CITE: author : EHRENPREIS TH
+d1 : 60
+d2 : 209
+d3 : 971
+num : 1
+publication : ACTA PAEDIATR SCAND
+
+REFERENCES: CITE: author : LAPEY A
+d1 : 84
+d2 : 328
+d3 : 974
+num : 2
+publication : J PEDIATR
+
+REFERENCES: CITE: author : MATTHEWS LW
+d1 : 65
+d2 : 558
+d3 : 964
+num : 3
+publication : J PEDIATR
+
+REFERENCES: CITE: author : LINDSLEY CB
+d1 : 14
+d2 : 398
+d3 : 971
+num : 4
+publication : ARTHRITIS RHEUM
+
+REFERENCES: CITE: author : WILLIAMS JA
+d1 : 1
+d2 : 469
+d3 : 972
+num : 5
+publication : CLIN GASTROENTEROL
+
+REFERENCES: CITE: author : KYLE J
+d1 :
+d2 :
+d3 : 968
+num : 6
+publication : PROC INT CONG GASTROENTER 8TH
+
+REFERENCES: CITE: author : BOWDEN DH
+d1 : 38
+d2 : 226
+d3 : 965
+num : 7
+publication : AM J MED
+
+REFERENCES: CITE: author : SMITH A
+d1 : 1
+d2 : 443
+d3 : 972
+num : 8
+publication : J CLIN GASTROENTEROL
+
+REFERENCES: CITE: author : MCCAFFERY TD
+d1 : 45
+d2 : 386
+d3 : 970
+num : 9
+publication : PEDIATRICS
+
+REFERENCES: CITE: author : DYER N
+d1 : 1
+d2 : 449
+d3 : 972
+num : 10
+publication : CLIN GASTROENTEROL
+
+REFERENCES: CITE: author : CHADWICK V
+d1 : 289
+d2 : 172
+d3 : 973
+num : 11
+publication : N ENGL J MED
+
+REFERENCES: CITE: author : SMITH L
+d1 : 286
+d2 : 1371
+d3 : 972
+num : 12
+publication : N ENGL J MED
+
+REFERENCES: CITE: author : EARNEST D
+d1 : 51
+d2 : 26A
+d3 : 972
+num : 13
+publication : J CLIN INVEST
+
+REFERENCES: CITE: author : ANON
+d1 :
+d2 :
+d3 : 971
+num : 14
+publication : GUIDE TO DIAGNOSIS AND MANAGE
+
+REFERENCES: CITE: author : DOERSHUK CF
+d1 :
+d2 : 707
+d3 : 968
+num : 15
+publication : IN: GREEN M
+
+REFERENCES: CITE: author : MONK M
+d1 : 53
+d2 : 198
+d3 : 967
+num : 16
+publication : GASTROENTEROLOGY
+
+RECORD: CITATIONS:
+
+
+
+
+
+
+CITATIONS: CITE: author : SAGRANSKY DM
+d1 : 134
+d2 : 319
+d3 : 980
+num : 1
+publication : AM J DIS CHILD
+
+CITATIONS: CITE: author : DELUMLEY L
+d1 : 40
+d2 : 723
+d3 : 983
+num : 2
+publication : ARCH FR PEDIATR
+
+CITATIONS: CITE: author : BERKIN KE
+d1 : 67
+d2 : 103
+d3 : 985
+num : 3
+publication : EUR J RESPIR DIS
+
+CITATIONS: CITE: author : RUSH PJ
+d1 : 15
+d2 : 213
+d3 : 986
+num : 4
+publication : SEM ARTHRITIS RHEUM
+
+CITATIONS: CITE: author : OJEDA VJ
+d1 : 29
+d2 : 567
+d3 : 986
+num : 5
+publication : DIS COLON RECTUM
+
+CITATIONS: CITE: author : PHILLIPS BM
+d1 : 79
+d2 : 44
+d3 : 986
+num : 6
+publication : J ROY SOC MED
+
