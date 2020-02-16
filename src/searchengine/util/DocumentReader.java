@@ -65,6 +65,7 @@ public class DocumentReader {
     return lines.toArray(new String[lines.size()]);
   }
 
+  //To be noted: Hashmap resizes internally so no need to resize if the dictionary is full
   public void createInvertedIndex(HashMap<String, Tuple> map) {
     // sort the index before writing it into the disk.
     LinkedHashMap<String, Tuple> sortedMap = new LinkedHashMap<>();
