@@ -6,13 +6,12 @@ import org.xml.sax.SAXException;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +34,7 @@ public class Token {
   private String fileContents;
   private DocumentReader documentReader;
   private String documentID;
+  private HashMap<String, Tuple> map = new HashMap<>();
 
 
   public Token(String filename) {
@@ -55,13 +55,12 @@ public class Token {
         fileContents = documentReader.readFile(StandardCharsets.UTF_8, nodeList, i);
         tokenizeContent();
       }
+      printInvertedIndex();
     } catch (ParserConfigurationException | SAXException | IOException e) {
       e.printStackTrace();
     }
   }
 
-  // TODO: remove unnecessary things and add single whitespaces only.
-  // TODO: split into array based on whitespaces. Ignore the stop words.
 
   private void tokenizeContent() {
     this.fileContents = this.fileContents.replaceAll("(?:&#[0-9]*;)", " ");
@@ -78,58 +77,58 @@ public class Token {
     this.fileContents = this.fileContents.replaceAll("&amp;", "");
     this.fileContents = this.fileContents.replaceAll("-", "");
     this.documentID = this.fileContents.split(" ")[2];
-    this.fileContents = this.fileContents.replaceAll("[0-9]+", "");
+    this.fileContents = this.fileContents.replaceAll("[^a-zA-Z\\s+]", "");
     this.fileContents = removeStopWords();
     indexingTerms();
   }
 
-  // TODO: Make RecordNum as DocID while splitting.
-  //  TODO: Sort the terms and merge the common documents.
-  //  TODO: Make the term as key, tuple as value.
-  // TODO: I think one way to associate docID is by getting docId here and immediately creating the Posting out of that
-  //  before sending it for read to document reader. So for every iteration, we would have the docId before the file is even read.
+  // TODO: Currently two problems, the posting is not being added as a list.
   private void indexingTerms() {
-    // change the string into array and for each term, add in hashmap
-    HashMap<String, Tuple> map = new HashMap<>();
+    // change the string into array and for each term, add in hashMap
     String[] allTerms = fileContents.split(" ");
     for (int i = 0; i < allTerms.length; i++) {
-      if (!map.containsKey(allTerms[i])) {
-        Posting posting = new Posting();
-        posting.setDocumentID(documentID);
-        List<Posting> postings = new ArrayList<>();
-        postings.add(posting);
-        Tuple tuple = new Tuple();
-        tuple.setPostings(postings);
-        tuple.setFrequencyOfTerms(1);
-        map.put(allTerms[i], tuple);
-      } else {
-        Tuple tuple = map.get(allTerms[i]);
-        Posting posting = new Posting();
-        posting.setDocumentID(documentID);
-        tuple.getPostings().add(posting);
-        tuple.setFrequencyOfTerms(tuple.getFrequencyOfTerms() + 1);
-        map.put(allTerms[i], tuple);
+      if (!allTerms[i].equals("")) {
+        if (!map.containsKey(allTerms[i].trim())) {
+          Posting posting = new Posting();
+          posting.setDocumentID(documentID);
+          List<Posting> postings = new ArrayList<>();
+          postings.add(posting);
+          Tuple tuple = new Tuple();
+          tuple.setPostings(postings);
+          tuple.setFrequencyOfTerms(1);
+          map.put(allTerms[i], tuple);
+        } else {
+          Tuple tuple = map.get(allTerms[i]);
+          Posting posting = new Posting();
+          posting.setDocumentID(documentID);
+          if (!tuple.getPostings().contains(posting)) {
+            tuple.getPostings().add(posting);
+          }
+          tuple.setFrequencyOfTerms(tuple.getFrequencyOfTerms() + 1);
+          map.put(allTerms[i], tuple);
+        }
       }
     }
-    ArrayList<String> sortedKeys = new ArrayList<>(map.keySet());
-    Collections.sort(sortedKeys);
-    Properties properties = new Properties();
-    for (Map.Entry<String, Tuple> entry : map.entrySet()) {
-      for (Posting p : entry.getValue().getPostings()) {
-        properties.put(entry.getKey(), entry.getValue().getFrequencyOfTerms() + " " + p.getDocumentID());
-      }
-    }
+  }
+
+  private void printInvertedIndex() {
+    PrintWriter out = null;
     try {
-      properties.store(new FileOutputStream("data.properties"), null);
-        // Open given file in append mode.
-      /*  BufferedWriter out = new BufferedWriter(
-                new FileWriter("index.txt", true));
-        out.write(properties.toString());
-        out.close();*/
+      out = new PrintWriter(new BufferedWriter(new FileWriter("data.properties", true)));
+      for (Map.Entry<String, Tuple> entry : map.entrySet()) {
+        out.print(entry.getKey() + "= " + entry.getValue().getFrequencyOfTerms() + " ");
+        for (Posting p : entry.getValue().getPostings()) {
+          out.print( " " + p.getDocumentID() );
+        }
+        out.println();
+      }
     } catch (IOException e) {
       e.printStackTrace();
+    } finally {
+      if (out != null) {
+        out.close();
+      }
     }
-
   }
 
   private String removeStopWords() {

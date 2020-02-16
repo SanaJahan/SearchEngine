@@ -16,28 +16,29 @@ import java.util.List;
 public class DocumentReader {
 
   public String readFile(Charset encoding, NodeList nodeList, int index) {
-    String output = "";
+    String output;
     String content = "";
     Node node = nodeList.item(index);
     String attrStr = listAllAttributes(node);
     content +=  node.getTextContent();
     content += attrStr + "\n";
-    content = content.replaceAll("[.|,|-]", " ");
+    // lemma
+    content = content.replaceAll("[.|,-]", " ");
     byte[] encoded = content.getBytes();
     output = new String(encoded, encoding);
     return output;
   }
 
-  public String listAllAttributes(Node element) {
+  private String listAllAttributes(Node element) {
     NamedNodeMap attributes = element.getAttributes();
-    String attrStr = "";
+    StringBuilder attrStr = new StringBuilder();
     int numAttrs = attributes.getLength();
     for (int i = 0; i < numAttrs; i++) {
       Attr attr = (Attr) attributes.item(i);
       String attrValue = attr.getNodeValue();
-      attrStr += attrValue + "\n";
+      attrStr.append(attrValue).append("\n");
     }
-    return attrStr;
+    return attrStr.toString();
 
   }
 
