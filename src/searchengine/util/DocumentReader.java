@@ -1,70 +1,94 @@
 package searchengine.util;
 
 import org.w3c.dom.Attr;
-import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URISyntaxException;
+import java.io.InputStream;
+import java.io.PrintWriter;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.DirectoryIteratorException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+import searchengine.tokenizer.Posting;
+import searchengine.tokenizer.Tuple;
 
 
 public class DocumentReader {
 
-  public String readFile(Charset encoding, String location) {
-    String output = "";
-    File file = new File(location);
-
-    try {
-      DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-      DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-      Document doc = dBuilder.parse(file);
-      doc.getDocumentElement().normalize();
-      NodeList nodeList = doc.getElementsByTagName("*");
-      for (int i = 0; i < nodeList.getLength(); i++) {
-        String content = "";
-        Node node = nodeList.item(i);
-        String attrStr = listAllAttributes(node);
-        content += node.getParentNode().getNodeName() + ": " + node.getNodeName() + ": " + node.getTextContent();
-        content += attrStr + "\n";
-        byte[] encoded = content.getBytes();
-        output += new String(encoded, encoding);
-      }
-      return output;
-    } catch (ParserConfigurationException | SAXException | IOException e) {
-      e.printStackTrace();
-      return null;
-    }
+  public String readFile(Charset encoding, NodeList nodeList, int index) {
+    String output;
+    String content = "";
+    Node node = nodeList.item(index);
+    String attrStr = listAllAttributes(node);
+    content +=  node.getTextContent();
+    content += attrStr + "\n";
+    // lemma
+    content = content.replaceAll("[.|,-]", " ");
+    byte[] encoded = content.getBytes();
+    output = new String(encoded, encoding);
+    return output;
   }
 
-  public String listAllAttributes(Node element) {
+  private String listAllAttributes(Node element) {
     NamedNodeMap attributes = element.getAttributes();
-    String attrStr = "";
+    StringBuilder attrStr = new StringBuilder();
     int numAttrs = attributes.getLength();
     for (int i = 0; i < numAttrs; i++) {
       Attr attr = (Attr) attributes.item(i);
-      String attrName = attr.getNodeName();
       String attrValue = attr.getNodeValue();
-      attrStr += attrName + " : " + attrValue + "\n";
+      attrStr.append(attrValue).append("\n");
     }
-    return attrStr;
+    return attrStr.toString();
 
   }
 
+  public String[] getStopWords(String filename) throws IOException {
+    FileReader fileReader = new FileReader(filename);
+    BufferedReader bufferedReader = new BufferedReader(fileReader);
+    List<String> lines = new ArrayList<>();
+    String line;
+    while ((line = bufferedReader.readLine()) != null) {
+      lines.add(line);
+    }
+    bufferedReader.close();
+    return lines.toArray(new String[lines.size()]);
+  }
+
+  public void printInvertedIndex(HashMap<String, Tuple> map) {
+    PrintWriter out = null;
+    try {
+      out = new PrintWriter(new BufferedWriter(new FileWriter("data.properties", true)));
+     /* *//* get value by key *//*
+      InputStream input = new FileInputStream("data.properties");
+      Properties prop = new Properties();
+      // load a properties file
+      prop.load(input);*/
+      for (Map.Entry<String, Tuple> entry : map.entrySet()) {
+        out.print(entry.getKey() + "= " + entry.getValue().getFrequencyOfTerms() + " ");
+        for (Posting p : entry.getValue().getPostings()) {
+          out.print( " " + p.getDocumentID() );
+        }
+        out.println();
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    } finally {
+      if (out != null) {
+        out.close();
+      }
+    }
+  }
 }
 
 
