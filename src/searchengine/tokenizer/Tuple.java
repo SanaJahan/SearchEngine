@@ -2,6 +2,12 @@ package searchengine.tokenizer;
 
 import java.util.List;
 
+/**
+ * Represents the index data structure.
+ * frequencyOfTerms attribute gives the total frequency of the term in the list of documents given.
+ * postings holds the list of ids of all documents where the term has occurred at least once.
+ */
+
 public class Tuple {
   private List<Posting> postings;
   private int frequencyOfTerms;

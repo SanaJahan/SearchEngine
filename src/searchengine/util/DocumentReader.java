@@ -7,23 +7,23 @@ import org.w3c.dom.NodeList;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 
 import searchengine.tokenizer.Posting;
 import searchengine.tokenizer.Tuple;
 
-
+/**
+ * Utility class to read files, create inverted index and so forth.
+ */
 public class DocumentReader {
 
   public String readFile(Charset encoding, NodeList nodeList, int index) {
@@ -65,16 +65,19 @@ public class DocumentReader {
     return lines.toArray(new String[lines.size()]);
   }
 
-  public void printInvertedIndex(HashMap<String, Tuple> map) {
+  //To be noted: Hashmap resizes internally so no need to resize if the dictionary is full
+  public void createInvertedIndex(HashMap<String, Tuple> map) {
+    // sort the index before writing it into the disk.
+    LinkedHashMap<String, Tuple> sortedMap = new LinkedHashMap<>();
+    map.entrySet()
+            .stream()
+            .sorted(Map.Entry.comparingByKey())
+            .forEachOrdered(x -> sortedMap.put(x.getKey(), x.getValue()));
+
     PrintWriter out = null;
     try {
-      out = new PrintWriter(new BufferedWriter(new FileWriter("data.properties", true)));
-     /* *//* get value by key *//*
-      InputStream input = new FileInputStream("data.properties");
-      Properties prop = new Properties();
-      // load a properties file
-      prop.load(input);*/
-      for (Map.Entry<String, Tuple> entry : map.entrySet()) {
+      out = new PrintWriter(new BufferedWriter(new FileWriter("index.properties", true)));
+      for (Map.Entry<String, Tuple> entry : sortedMap.entrySet()) {
         out.print(entry.getKey() + "= " + entry.getValue().getFrequencyOfTerms() + " ");
         for (Posting p : entry.getValue().getPostings()) {
           out.print( " " + p.getDocumentID() );
