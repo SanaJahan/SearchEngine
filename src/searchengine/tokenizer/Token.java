@@ -4,18 +4,13 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Properties;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -30,21 +25,32 @@ import searchengine.util.DocumentReader;
  */
 public class Token {
 
-  private String fileName;
   private String fileContents;
   private DocumentReader documentReader;
   private String documentID;
   private HashMap<String, Tuple> map = new HashMap<>();
 
-
-  public Token(String filename) {
-    this.fileName = filename;
+  public Token() {
     this.documentReader = new DocumentReader();
   }
 
 
-  public void readDocuments() {
-    File file = new File(this.fileName);
+  public void listFilesForFolder(final File folder) {
+    for (final File fileEntry : folder.listFiles()) {
+      if (fileEntry.isDirectory()) {
+        listFilesForFolder(fileEntry);
+      } else {
+        readFile(fileEntry.getAbsolutePath());
+      }
+    }
+    documentReader.printInvertedIndex(map);
+  }
+
+
+
+
+  public void readFile(String absolutePath) {
+    File file = new File(absolutePath);
     try {
       DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
       DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -55,7 +61,6 @@ public class Token {
         fileContents = documentReader.readFile(StandardCharsets.UTF_8, nodeList, i);
         tokenizeContent();
       }
-      printInvertedIndex();
     } catch (ParserConfigurationException | SAXException | IOException e) {
       e.printStackTrace();
     }
@@ -111,25 +116,6 @@ public class Token {
     }
   }
 
-  private void printInvertedIndex() {
-    PrintWriter out = null;
-    try {
-      out = new PrintWriter(new BufferedWriter(new FileWriter("data.properties", true)));
-      for (Map.Entry<String, Tuple> entry : map.entrySet()) {
-        out.print(entry.getKey() + "= " + entry.getValue().getFrequencyOfTerms() + " ");
-        for (Posting p : entry.getValue().getPostings()) {
-          out.print( " " + p.getDocumentID() );
-        }
-        out.println();
-      }
-    } catch (IOException e) {
-      e.printStackTrace();
-    } finally {
-      if (out != null) {
-        out.close();
-      }
-    }
-  }
 
   private String removeStopWords() {
     try {
