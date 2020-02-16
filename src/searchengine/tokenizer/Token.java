@@ -21,7 +21,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import searchengine.util.DocumentReader;
 
 /**
- * Data structure for tokens used for indexing [term <docId, freq>]
+ * Data structure for tokens used for indexing [term = frequency docID docID ...]
  */
 public class Token {
 
@@ -35,21 +35,25 @@ public class Token {
   }
 
 
-  public void listFilesForFolder(final File folder) {
+  /**
+   * Entry point for the folder from where all the files will be read for tokenizing and indexing.
+   * @param folder - the location for reading all the files.
+   */
+  public void readFilesFromFolder(final File folder) {
     for (final File fileEntry : folder.listFiles()) {
       if (fileEntry.isDirectory()) {
-        listFilesForFolder(fileEntry);
+        readFilesFromFolder(fileEntry);
       } else {
+        // file being read and tokenized
         readFile(fileEntry.getAbsolutePath());
       }
     }
-    documentReader.printInvertedIndex(map);
+    // final step: sort the index & write it into the disk.
+    documentReader.createInvertedIndex(map);
   }
 
 
-
-
-  public void readFile(String absolutePath) {
+  private void readFile(String absolutePath) {
     File file = new File(absolutePath);
     try {
       DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -67,6 +71,11 @@ public class Token {
   }
 
 
+  /**
+   * Removes all the unnecessary special characters, numbers.
+   * stores the RECORDNUM as the documentID for each record which will be used for indexing.
+   * calls the indexing method to index the document contents.
+   */
   private void tokenizeContent() {
     this.fileContents = this.fileContents.replaceAll("(?:&#[0-9]*;)", " ");
     this.fileContents = this.fileContents.replaceAll(",*", "");
@@ -87,11 +96,19 @@ public class Token {
     indexingTerms();
   }
 
-  // TODO: Currently two problems, the posting is not being added as a list.
+
+  /**
+   * Indexing follows the single-pass in-memory indexing [SPIMI] algorithm.
+   * Indexing algorithm: The entire document contents converted to an array of terms.
+   * For each term, an index is created which stores the term as key, and a list of postings as value,
+   * where each posting has the record of the documentID.
+   * If the term is already present in the hashmap, then just add the new posting in the value for the given term.
+   */
   private void indexingTerms() {
     // change the string into array and for each term, add in hashMap
     String[] allTerms = fileContents.split(" ");
     for (int i = 0; i < allTerms.length; i++) {
+      // check why "" is being indexed. For now add a check.
       if (!allTerms[i].equals("")) {
         if (!map.containsKey(allTerms[i].trim())) {
           Posting posting = new Posting();
@@ -117,6 +134,10 @@ public class Token {
   }
 
 
+  /**
+   * Removing stop words from the contents.
+   * @return a string of contents removing all the stopwords from it.
+   */
   private String removeStopWords() {
     try {
       String[] stopWords = documentReader.getStopWords("./resource/stoplist.txt");

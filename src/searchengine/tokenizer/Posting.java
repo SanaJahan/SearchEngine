@@ -2,6 +2,9 @@ package searchengine.tokenizer;
 
 import java.util.Objects;
 
+/**
+ * Represents data structure to store the document id and is used as a index value.
+ */
 public class Posting {
   private String documentID;
 
