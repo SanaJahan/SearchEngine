@@ -1,52 +1,31 @@
 package searchengine.util;
 
 import org.w3c.dom.Attr;
-import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
 
 public class DocumentReader {
 
-  public String readFile(Charset encoding, String location) {
+  public String readFile(Charset encoding, NodeList nodeList, int index) {
     String output = "";
-    File file = new File(location);
-
-    try {
-      DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-      DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-      Document doc = dBuilder.parse(file);
-      doc.getDocumentElement().normalize();
-      NodeList nodeList = doc.getElementsByTagName("*");
-      for (int i = 0; i < nodeList.getLength(); i++) {
-        String content = "";
-        Node node = nodeList.item(i);
-        String attrStr = listAllAttributes(node);
-        content +=  " " + node.getTextContent() + " ";
-        content += attrStr + "\n";
-        content = content.replaceAll("[.|,|-]", " ");
-        byte[] encoded = content.getBytes();
-        output += new String(encoded, encoding);
-      }
-      return output;
-    } catch (ParserConfigurationException | SAXException | IOException e) {
-      e.printStackTrace();
-      return null;
-    }
+    String content = "";
+    Node node = nodeList.item(index);
+    String attrStr = listAllAttributes(node);
+    content +=  node.getTextContent();
+    content += attrStr + "\n";
+    content = content.replaceAll("[.|,|-]", " ");
+    byte[] encoded = content.getBytes();
+    output = new String(encoded, encoding);
+    return output;
   }
 
   public String listAllAttributes(Node element) {

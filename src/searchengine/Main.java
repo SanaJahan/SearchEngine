@@ -15,14 +15,13 @@ public class Main {
           Runnable task = () -> {
                 System.out.println(" Reading file cf7" + index + ".xml");
                 Token token = new Token( "./resource/cf7" + index + ".xml");
-            try {
-              token.readDocuments();
-            } catch (IOException e) {
-              e.printStackTrace();
-            }
+            token.readDocuments();
           };
             ex.execute(task);
         }
         ex.shutdown();
+
+
     }
+
 }
