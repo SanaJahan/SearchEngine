@@ -1,11 +1,21 @@
 package searchengine.ranking;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import searchengine.tokenizer.Posting;
 import searchengine.tokenizer.Tuple;
@@ -21,6 +31,9 @@ public class QueryParser {
 
   //TODO: parse the query xml
 
+
+  public QueryParser() {
+  }
 
   public QueryParser(String query) {
     query = documentReader.normalizeStr(query);
@@ -39,7 +52,7 @@ public class QueryParser {
    * @param map
    * @return
    */
-  public void calculateDocTfIdf(Map<String, Tuple> map) {
+  public List<String> calculateDocTfIdf(Map<String, Tuple> map) {
     PriorityQueue<ScoredDocument> heap = new PriorityQueue<>(K, new ScoreComparator());
     List<ScoredDocument> list = new ArrayList<>();
     double[] scores;
@@ -48,7 +61,7 @@ public class QueryParser {
       if (map.containsKey(qTerm)) {
         scores = new double[map.get(qTerm).getPostings().size()];
         int count = 0;
-        double idf = cosineSimilarity.calculateIDF(documentReader.TOTAL_DOCUMENTS, map.get(qTerm).getFrequencyOfTerms());
+        double idf = cosineSimilarity.calculateIDF(documentReader.TOTAL_DOCUMENTS, map.get(qTerm).getPostings().size());
         // wq,t
         double queryTf = 1.0 / this.query.split(" ").length;
         for (Posting posting : map.get(qTerm).getPostings()) {
@@ -76,14 +89,45 @@ public class QueryParser {
         list.clear();
       }
     }
-    getRelevantDocuments(heap);
+    return getRelevantDocuments(heap);
   }
 
 
-  public void getRelevantDocuments(Queue<ScoredDocument> scoredDocuments) {
+  private List<String> getRelevantDocuments(Queue<ScoredDocument> scoredDocuments) {
+    List<String> answerList = new ArrayList<>();
     for (ScoredDocument document : scoredDocuments) {
-        System.out.println(document.getPosting().getDocumentID());
+          String docId = document.getPosting().getDocumentID();
+          documentReader.writeSearchResult(docId);
+          answerList.add(docId);
     }
+    return answerList;
+  }
+
+  public List<Query> parseQuery(String absolutePath){
+      File file = new File(absolutePath);
+      List<Query> queries = new ArrayList<>();
+      try {
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+        Document doc = dBuilder.parse(file);
+        doc.getDocumentElement().normalize();
+        NodeList nodeList = doc.getElementsByTagName("QUERY");
+        for (int i = 0; i < nodeList.getLength(); i++) {
+          List<Integer> displayedRelevantDocs = new ArrayList<>();
+          // add all the relevant documents to the list. for recall
+          for (int j = 0; j < ((Element)nodeList.item(i)).getElementsByTagName("Item").getLength() ; j++) {
+            displayedRelevantDocs.add(Integer.parseInt(((Element)nodeList.item(i)).getElementsByTagName("Item").item(j).getTextContent()));
+          }
+          int totalRelevantDocs = Integer.parseInt(((Element)nodeList.item(i)).getElementsByTagName("Results").item(0).getTextContent());
+          String queryText = ((Element)nodeList.item(i)).getElementsByTagName("QueryText").item(0).getTextContent();
+          int queryId = Integer.parseInt(((Element)nodeList.item(i)).getElementsByTagName("QueryNumber").item(0).getTextContent());
+          Query query = new Query(queryId,queryText,totalRelevantDocs,displayedRelevantDocs);
+          queries.add(query);
+        }
+      } catch (ParserConfigurationException | SAXException | IOException e) {
+        e.printStackTrace();
+      }
+      return queries;
   }
 
 }

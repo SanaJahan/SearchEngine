@@ -50,7 +50,7 @@ public class Token {
       }
     }
     // final step: sort the index & write it into the disk.
-    documentReader.createInvertedIndex(map);
+    //documentReader.createInvertedIndex(map);
     return map;
   }
 

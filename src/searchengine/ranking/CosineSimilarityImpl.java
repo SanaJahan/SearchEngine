@@ -15,7 +15,7 @@ public class CosineSimilarityImpl implements CosineSimilarity {
     return 1 + Math.log(totalDocuments / noOfDocsWithGivenTerm);
   }
 
-  @Override
+  /*@Override
   public double calculateCosineSimilarity(double query, double document) {
     double dotProduct = 0.0;
     double magnitude1 = 0.0;
@@ -35,7 +35,7 @@ public class CosineSimilarityImpl implements CosineSimilarity {
       return 0.0;
     }
     return cosineSimilarity;
-  }
+  }*/
 
 
 }
