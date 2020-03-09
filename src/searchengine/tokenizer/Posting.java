@@ -1,5 +1,6 @@
 package searchengine.tokenizer;
 
+import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -7,6 +8,29 @@ import java.util.Objects;
  */
 public class Posting {
   private String documentID;
+  private Map<String, Double> specificTermFreq;
+  private int totalFrequency;
+
+
+  public Map<String, Double> getSpecificTermFreq() {
+    return specificTermFreq;
+  }
+
+  public Double getTermFreqInDoc(String documentID) {
+    return specificTermFreq.get(documentID);
+  }
+
+  public void setSpecificTermFreq(Map<String, Double> specificTermFreq) {
+    this.specificTermFreq = specificTermFreq;
+  }
+
+  public int getTotalFrequency() {
+    return totalFrequency;
+  }
+
+  public void setTotalFrequency(int totalFrequency) {
+    this.totalFrequency = totalFrequency;
+  }
 
   public String getDocumentID() {
     return documentID;

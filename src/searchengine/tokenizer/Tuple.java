@@ -1,6 +1,7 @@
 package searchengine.tokenizer;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Represents the index data structure.
@@ -11,6 +12,16 @@ import java.util.List;
 public class Tuple {
   private List<Posting> postings;
   private int frequencyOfTerms;
+
+  private Map<String,Posting> termFreqInDoc;
+
+  public Map<String, Posting> getTermFreqInDoc() {
+    return termFreqInDoc;
+  }
+
+  public void setTermFreqInDoc(Map<String, Posting> termFreqInDoc) {
+    this.termFreqInDoc = termFreqInDoc;
+  }
 
   public List<Posting> getPostings() {
     return postings;
