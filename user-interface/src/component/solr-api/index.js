@@ -12,6 +12,8 @@ function getPayload(query) {
                     hl:"on",
                     "hl.fl":"content",
                     "hl.requireFieldMatch":"true",
+                    "usePhraseHighLighter":"true",
+                    "highlightMultiTerm":"true",
                     q: 'content:'+query.query+' Or url:'+query.query,
                     wt:"json"
                 }
@@ -21,7 +23,7 @@ function getPayload(query) {
 
 export default class SolrApi{
     constructor() {
-        this.url = "http://localhost:8983/solr/travelandeat/select";
+        this.url = "http://localhost:8983/solr/travelandeat/tneselect";
     }
 
     // hit the solr localhost select and get the result in json format here.

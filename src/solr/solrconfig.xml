@@ -368,11 +368,11 @@
   <query>
 
     <!-- Maximum number of clauses allowed when parsing a boolean query string.
-         
+
          This limit only impacts boolean queries specified by a user as part of a query string,
          and provides per-collection controls on how complex user specified boolean queries can
          be.  Query strings that specify more clauses then this will result in an error.
-         
+
          If this per-collection limit is greater then the global `maxBooleanClauses` limit
          specified in `solr.xml`, it will have no effect, as that setting also limits the size
          of user specified boolean queries.
@@ -382,7 +382,7 @@
     <!-- Solr Internal Query Caches
 
          There are four implementations of cache available for Solr:
-         LRUCache, based on a synchronized LinkedHashMap, 
+         LRUCache, based on a synchronized LinkedHashMap,
          LFUCache and FastLRUCache, based on a ConcurrentHashMap, and CaffeineCache -
          a modern and robust cache implementation. Note that in Solr 9.0
          only CaffeineCache will be available, other implementations are now
@@ -702,10 +702,10 @@
       <str name="echoParams">explicit</str>
       <int name="rows">10</int>
       <!-- Default search field
-         <str name="df">text</str> 
+         <str name="df">text</str>
         -->
       <!-- Change from JSON to XML format (the default prior to Solr 7.0)
-         <str name="wt">xml</str> 
+         <str name="wt">xml</str>
         -->
     </lst>
     <!-- In addition to defaults, "appends" params can be specified
@@ -763,6 +763,31 @@
   </requestHandler>
 
   <!-- A request handler that returns indented JSON by default -->
+  <requestHandler name="/tneselect" class="solr.SearchHandler">
+    <lst name="defaults">
+      <str name="defType">edismax</str>
+      <str name="qf">content^2.4 url^0.4</str>
+      <str name="q.alt">*:*</str>
+      <str name="mm">80%</str>
+      <str name="sow">false</str>
+      <str name="echoParams">explicit</str>
+      <str name="wt">json</str>
+      <str name="indent">true</str>
+      <str name="tie">1.0</str>
+      <str name="hl">true</str>
+      <str name="hl.method">unified</str>
+      <str name="hl.tag.ellipsis">... </str>
+      <str name="hl.fragsize">200</str>
+      <str name="hl.fl">content</str>
+      <int name="hl.snippets">4</int>
+      <str name="hl.tag.ellipsis">... </str>
+      <str name="hl.simple.pre">&#x3C;em&#x3E;</str>
+      <str name="hl.simple.post">&#x3C;/em&#x3E;</str>
+      <str name="hl.mergeContiguous">true</str>
+    </lst>
+  </requestHandler>
+
+  <!-- A request handler that returns indented JSON by default -->
   <requestHandler name="/query" class="solr.SearchHandler">
     <lst name="defaults">
       <str name="echoParams">explicit</str>
@@ -774,6 +799,7 @@
   <initParams path="/update/**,/query,/select,/spell">
     <lst name="defaults">
       <str name="df">_text_</str>
+      <str name="update.chain">dedupe</str>
     </lst>
   </initParams>
 
@@ -1124,19 +1150,17 @@
        uniqueness based on that anyway.
 
     -->
-  <!--
      <updateRequestProcessorChain name="dedupe">
        <processor class="solr.processor.SignatureUpdateProcessorFactory">
          <bool name="enabled">true</bool>
          <str name="signatureField">id</str>
-         <bool name="overwriteDupes">false</bool>
-         <str name="fields">name,features,cat</str>
+         <bool name="overwriteDupes">true</bool>
+         <str name="fields">url,content</str>
          <str name="signatureClass">solr.processor.Lookup3Signature</str>
        </processor>
        <processor class="solr.LogUpdateProcessorFactory" />
        <processor class="solr.RunUpdateProcessorFactory" />
      </updateRequestProcessorChain>
-    -->
 
   <!-- Response Writers
 

@@ -289,10 +289,10 @@
       <analyzer type="index">
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
-        <!-- in this example, we will only use synonyms at query time
-        <filter class="solr.SynonymGraphFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
-        <filter class="solr.FlattenGraphFilterFactory"/>
-        -->
+          <!-- in this example, we will only use synonyms at query time
+          <filter class="solr.SynonymGraphFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+          <filter class="solr.FlattenGraphFilterFactory"/>
+          -->
         <filter class="solr.LowerCaseFilterFactory"/>
       </analyzer>
       <analyzer type="query">
@@ -1009,8 +1009,9 @@
         <filter class="solr.SnowballPorterFilterFactory" language="Turkish"/>
       </analyzer>
     </fieldType>
-    <field name="DocumentID" type="string" uninvertible="true" default="N/A" indexed="true" required="false" stored="true"/>
-    <field name="URL" type="text_general"/>
+    <field name="docId" type="string" uninvertible="true" default="N/A" indexed="true" required="false" stored="true"/>
+    <field name="url" type="text_general" stored="true" indexed="true" multiValued="false"/>
+    <field name="signatureField" type="string" stored="true" indexed="true" multiValued="false" />
     <field name="content" type="text_general" default="0" indexed="true" stored="true" uninvertible="false" docValues="false" required="false"/>
 
     <!-- Similarity is the scoring routine for each document vs. a query.
