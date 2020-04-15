@@ -41,6 +41,13 @@ public class Token {
    * @param folder - the location for reading all the files.
    */
   public Map<String,Tuple> readFilesFromFolder(final File folder) {
+    readFileEntries(folder);
+    // final step: sort the index & write it into the disk.
+    //documentReader.createInvertedIndex(map);
+    return map;
+  }
+
+  private void readFileEntries(File folder) {
     for (final File fileEntry : folder.listFiles()) {
       if (fileEntry.isDirectory()) {
         readFilesFromFolder(fileEntry);
@@ -49,9 +56,6 @@ public class Token {
         readFile(fileEntry.getAbsolutePath());
       }
     }
-    // final step: sort the index & write it into the disk.
-    //documentReader.createInvertedIndex(map);
-    return map;
   }
 
 

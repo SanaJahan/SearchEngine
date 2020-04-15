@@ -1,0 +1,45 @@
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+
+  label {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "SF Display";
+    font-weight: 700;
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+  }
+
+  input {
+    height: 55px;
+    padding: 3px 15px;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #F1F1F1;
+    width: 100%;
+    display: block;
+    font-family: "SF Display";
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .err {
+    font-family: "SF Display";
+    font-weight: 400;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
+  }
+
+  .search-bar{
+    background: white;
+    width: 50%;
+    margin-left: 25%;
+  }
+}

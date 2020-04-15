@@ -7,6 +7,7 @@ import org.w3c.dom.NodeList;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -48,6 +49,7 @@ public class DocumentReader {
     TOTAL_DOCUMENTS++;
     return output;
   }
+
 
   private String listAllAttributes(Node element) {
     NamedNodeMap attributes = element.getAttributes();

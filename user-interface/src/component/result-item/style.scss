@@ -1,0 +1,12 @@
+.result-item{
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: auto !important;
+  padding-left: 0.5% !important;
+  margin-top:10px !important;
+  background: #F1F1F1;
+  font-size: 14px;
+  font-weight: bold;
+}
