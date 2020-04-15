@@ -9,11 +9,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.select.Elements;
-import org.xml.sax.InputSource;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.StringReader;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
@@ -27,34 +25,35 @@ import javax.xml.transform.stream.StreamResult;
 
 public class WebSpider {
 
-  private final Set<URL> links;
+  private final Set<String> links;
   private final long startTime;
   private static int count = 0;
+  private HashSet<String> urlMap = new HashSet<>();
 
 
   public WebSpider(final URL startURL) throws IOException, ParseException {
 
-    this.links = new HashSet<>();
+    this.links = new HashSet<String>();
     this.startTime = System.currentTimeMillis();
     crawl(initURLs(startURL));
   }
 
-  private void crawl(final Set<URL> URLS) {
+  private void crawl(final Set<String> URLS) {
     URLS.removeAll(this.links);
     if (!URLS.isEmpty()) {
-      final Set<URL> newURLS = new HashSet<>();
+      final Set<String> newURLS = new HashSet<>();
       try {
         this.links.addAll(URLS);
-        for (final URL url : URLS) {
-          System.out.println("time = " + (System.currentTimeMillis() - this.startTime) +
-                  " connect to : " + url);
+        for (final String url : URLS) {
+         /* System.out.println("time = " + (System.currentTimeMillis() - this.startTime) +
+                  " connect to : " + url);*/
           final Document document = Jsoup.connect(url.toString()).get();
           final Elements linksOnPage = document.select("a[href]");
           for (final Element page : linksOnPage) {
-            if (page.text().matches("^.*\\b(www.theguardian.com|travel|TRAVEL|Travel)\\b.*$")) {
+            if (page.text().matches("^.*\\b(www.theguardian.com|travel|Travel|TRAVEL|food|Food|FOOD|places|visit|Visit|Places|tourist|Tourist|tourism|Tourism|recipe|Recipe)\\b.*$")) {
               final String urlText = page.attr("abs:href").trim();
               final URL discoveredURL = new URL(urlText);
-              newURLS.add(discoveredURL);
+              newURLS.add(discoveredURL.toString());
               writeResults("document" + count++, discoveredURL, ".xml");
             }
           }
@@ -67,12 +66,21 @@ public class WebSpider {
 
 
   private void writeResults(String fileName, URL discoveredURL, String extension) throws IOException {
-    System.out.println(discoveredURL);
     final Document document = Jsoup.connect(discoveredURL.toString()).get();
-    writeToFile(fileName, discoveredURL.toString(), extension, document);
+    //to prevent writing duplicate websites
+      if(urlMap.contains(discoveredURL.toString())){
+       // System.out.println(discoveredURL.toString() + " is already present");
+      }else {
+        urlMap.add(discoveredURL.toString());
+        String[] segments = discoveredURL.getPath().split("/");
+        String title = segments[segments.length-1];
+        title = title.replace("-", " ");
+        title = title.substring(0, 1).toUpperCase() + title.substring(1);
+        writeToFile(fileName, discoveredURL.toString(), title, extension, document);
+      }
   }
 
-  private void writeToFile(String fileName, String discoveredURL, String extension, Document document) {
+  private void writeToFile(String fileName, String discoveredURL, String title, String extension, Document document) {
     try {
 
       DocumentBuilderFactory documentFactory = DocumentBuilderFactory.newInstance();
@@ -94,6 +102,13 @@ public class WebSpider {
       url.setAttribute("name","url");
       url.appendChild(doc.createTextNode(discoveredURL));
       docu.appendChild(url);
+
+      //title element
+      org.w3c.dom.Element titleName = doc.createElement("field");
+      titleName.setAttribute("name","title");
+      titleName.appendChild(doc.createTextNode(title));
+      docu.appendChild(titleName);
+
       // content element
       org.w3c.dom.Element content = doc.createElement("field");
       content.setAttribute("name","content");
@@ -103,18 +118,18 @@ public class WebSpider {
       TransformerFactory transformerFactory = TransformerFactory.newInstance();
       Transformer transformer = transformerFactory.newTransformer();
       DOMSource domSource = new DOMSource(doc);
-      StreamResult streamResult = new StreamResult(new File("resource/crawledData/" + fileName + extension));
+      StreamResult streamResult = new StreamResult(new File("resource/crawledFoodData/" + fileName + extension));
       transformer.transform(domSource, streamResult);
 
-      System.out.println("Done creating XML File");
+      System.out.println("Done creating XML File for : " + discoveredURL);
     }catch (Exception e){
       System.out.println(e.getMessage());
     }
   }
 
 
-  private Set<URL> initURLs(final URL startURL) throws ParseException, IOException {
-    Set<URL> urls = new HashSet<>();
+  private Set<String> initURLs(final URL startURL) throws ParseException, IOException {
+    Set<String> urls = new HashSet<>();
     final Document document = Jsoup.connect(startURL.toString()).ignoreContentType(true).get();
     for (int i = 0; i < document.body().childNodeSize(); i++) {
       final Node linksOnPage = document.body().childNode(i);
@@ -126,14 +141,14 @@ public class WebSpider {
       JSONArray n = (JSONArray) editions.get("editions");
       for (int j = 0; j < n.size(); j++) {
         JSONObject webUrl = (JSONObject) parser.parse(n.get(j).toString());
-        urls.add(new URL(webUrl.get("webUrl").toString()));
+        urls.add(webUrl.get("webUrl").toString());
       }
     }
     return urls;
   }
 
   public static void main(String[] args) throws IOException, ParseException {
-    String section = "travel";
+    String section = "food";
     new WebSpider(new URL("http://content.guardianapis.com/sections?q=" + section + "&api-key=" + "5299e22b-ca25-4d66-beef-07dadd4e2b5b"));
   }
 }

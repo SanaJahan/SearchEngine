@@ -1011,6 +1011,7 @@
     </fieldType>
     <field name="docId" type="string" uninvertible="true" default="N/A" indexed="true" required="false" stored="true"/>
     <field name="url" type="text_general" stored="true" indexed="true" multiValued="false"/>
+    <field name="title" type="text_general" stored="true" indexed="true" multiValued="false"/>
     <field name="signatureField" type="string" stored="true" indexed="true" multiValued="false" />
     <field name="content" type="text_general" default="0" indexed="true" stored="true" uninvertible="false" docValues="false" required="false"/>
 

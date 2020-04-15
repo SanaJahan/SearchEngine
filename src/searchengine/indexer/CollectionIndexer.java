@@ -26,11 +26,6 @@ public class CollectionIndexer {
   private static DocumentReader documentReader = new DocumentReader();
 
   public static void main(String[] args) throws IOException, SolrServerException {
-    /*if (args.length != 1) {
-      throw new IllegalArgumentException(
-              "You must only indicate the path of the dataset.");
-    }*/
-    //String datasetPath = args[0];
 
     System.out.println("Clearing previous collection.");
     // First deleting previous collection.
@@ -41,9 +36,11 @@ public class CollectionIndexer {
     solr.commit();
     System.out.println("Documents deleted");
 
-    File folder = new File("./resource/crawledData/");
+    File folder = new File("./resource/crawledFoodData/");
+    File folder2 = new File("./resource/travelData/");
 
     readFolderToIndex(folder);
+    readFolderToIndex(folder2);
 
   }
 
@@ -97,6 +94,10 @@ public class CollectionIndexer {
           } else if (nNode.getAttributes().item(0).getNodeValue().equals("url")) {
             String url = normalize(nNode.getAttributes().item(0).getNodeValue());
             document.addField(url, textContent);
+          }
+          else if (nNode.getAttributes().item(0).getNodeValue().equals("title")) {
+            String title = normalize(nNode.getAttributes().item(0).getNodeValue());
+            document.addField(title, textContent);
           } else if (nNode.getAttributes().item(0).getNodeValue().equals("content")) {
             String content = normalize(nNode.getAttributes().item(0).getNodeValue());
             document.addField(content, textContent);
