@@ -5,7 +5,7 @@ The project for the final is in the solr folder && the user-interface folder
 3. user-interface folder contains the UI that connects the solr server to the user-interface.
 
 ## How to run the project
-1. Download the solr folder, the user-interface folder & the resource folder
+1. Download the solr folder, the user-interface folder & the resource folder. Create the travelData folder in the resource folder.
 2. The system should have  apache solr installed
 3. Run the solr server in "http://localhost:8983/" and create the core "travelandeat"
 4. Give the location of the solr folder path in the instanceDir option in solr server to create the data folder in the local solr folder.
