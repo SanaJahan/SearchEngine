@@ -1,3 +1,23 @@
+# Vertical Search Engine
+The project for the final is in the solr folder && the user-interface folder
+1. indexer folder contains the script to index the dataset to the solr server
+2. webcrawler folder contains the script to run the web crawler to create the dataset.
+3. user-interface folder contains the UI that connects the solr server to the user-interface.
+
+## How to run the project
+1. Download the solr folder, the user-interface folder & the resource folder
+2. The system should have  apache solr installed
+3. Run the solr server in "http://localhost:8983/" and create the core "travelandeat"
+4. Give the location of the solr folder path in the instanceDir option in solr server to create the data folder in the local solr folder.
+5. Run the WebSpider script to crawl the dataset.
+6. Run the CollectionIndexer script to index the dataset
+7. Go to query in solr server and run execute to check if the dataset has been indexed
+8. In order to run the user-interface in "localhost:3000", first run yarn to install all the dependencies and 
+then run " yarn start" to run the UI
+
+***Please note in some results the title can have similar names but they are different urls taking us to a different webpage***
+
+
 # SearchEngine
 Project for Information Retrieval
 

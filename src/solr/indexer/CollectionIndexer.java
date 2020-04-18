@@ -1,4 +1,4 @@
-package searchengine.indexer;
+package solr.indexer;
 
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrServerException;
@@ -36,11 +36,9 @@ public class CollectionIndexer {
     solr.commit();
     System.out.println("Documents deleted");
 
-    File folder = new File("./resource/crawledFoodData/");
-    File folder2 = new File("./resource/travelData/");
+    File folder = new File("./resource/travelData/");
 
     readFolderToIndex(folder);
-    readFolderToIndex(folder2);
 
   }
 

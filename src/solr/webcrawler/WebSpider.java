@@ -1,4 +1,4 @@
-package searchengine.webcrawler;
+package solr.webcrawler;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -30,7 +30,6 @@ public class WebSpider {
   private static int count = 0;
   private HashSet<String> urlMap = new HashSet<>();
 
-
   public WebSpider(final URL startURL) throws IOException, ParseException {
 
     this.links = new HashSet<String>();
@@ -45,14 +44,24 @@ public class WebSpider {
       try {
         this.links.addAll(URLS);
         for (final String url : URLS) {
-         /* System.out.println("time = " + (System.currentTimeMillis() - this.startTime) +
-                  " connect to : " + url);*/
           final Document document = Jsoup.connect(url.toString()).get();
           final Elements linksOnPage = document.select("a[href]");
           for (final Element page : linksOnPage) {
-            if (page.text().matches("^.*\\b(www.theguardian.com|travel|Travel|TRAVEL|food|Food|FOOD|places|visit|Visit|Places|tourist|Tourist|tourism|Tourism|recipe|Recipe)\\b.*$")) {
-              final String urlText = page.attr("abs:href").trim();
-              final URL discoveredURL = new URL(urlText);
+            final String urlText = page.attr("abs:href").trim();
+            // changes to make sure url is relevant.
+            final URL discoveredURL = new URL(urlText);
+            String urlPath = discoveredURL.toString().toLowerCase();
+            /*if(!(urlPath.indexOf("facebook") != -1 || urlPath.indexOf("twitter") != -1 ||
+                    urlPath.contains("support.theguardian.com") || urlPath.indexOf("preference") != -1 ||
+                    urlPath.indexOf("subscription") != -1 || urlPath.indexOf("subscribe") != -1 ||
+                    urlPath.indexOf("signin") != -1 || urlPath.indexOf("signout") != -1 ||
+                    urlPath.indexOf("manage") != -1 || urlPath.indexOf("#maincontent") != -1 ||
+                    urlPath.indexOf("contributions") != -1 || urlPath.indexOf("commentisfree") != -1||
+                    urlPath.indexOf("theguardian.newspapers.com") != -1) || urlPath.indexOf("privacystatement") != -1
+            || urlPath.indexOf("about-guardian-us") != -1 || urlPath.contains("profile.theguardian.com") ||
+            urlPath.indexOf("www.google.co.uk")!= -1) */
+            if(!urlPath.contains("facebook") && (urlPath.contains("travel") ||
+                    urlPath.contains("food") || urlPath.contains("world") || urlPath.contains("recipes"))){
               newURLS.add(discoveredURL.toString());
               writeResults("document" + count++, discoveredURL, ".xml");
             }
@@ -68,9 +77,7 @@ public class WebSpider {
   private void writeResults(String fileName, URL discoveredURL, String extension) throws IOException {
     final Document document = Jsoup.connect(discoveredURL.toString()).get();
     //to prevent writing duplicate websites
-      if(urlMap.contains(discoveredURL.toString())){
-       // System.out.println(discoveredURL.toString() + " is already present");
-      }else {
+      if(!urlMap.contains(discoveredURL.toString())){
         urlMap.add(discoveredURL.toString());
         String[] segments = discoveredURL.getPath().split("/");
         String title = segments[segments.length-1];
@@ -118,7 +125,7 @@ public class WebSpider {
       TransformerFactory transformerFactory = TransformerFactory.newInstance();
       Transformer transformer = transformerFactory.newTransformer();
       DOMSource domSource = new DOMSource(doc);
-      StreamResult streamResult = new StreamResult(new File("resource/crawledFoodData/" + fileName + extension));
+      StreamResult streamResult = new StreamResult(new File("resource/travelData/" + fileName + extension));
       transformer.transform(domSource, streamResult);
 
       System.out.println("Done creating XML File for : " + discoveredURL);
@@ -148,7 +155,9 @@ public class WebSpider {
   }
 
   public static void main(String[] args) throws IOException, ParseException {
-    String section = "food";
-    new WebSpider(new URL("http://content.guardianapis.com/sections?q=" + section + "&api-key=" + "5299e22b-ca25-4d66-beef-07dadd4e2b5b"));
+    String travelSection = "travel";
+    String foodSection = "food";
+    new WebSpider(new URL("http://content.guardianapis.com/sections?q=" + travelSection + "&api-key=" + "5299e22b-ca25-4d66-beef-07dadd4e2b5b"));
+    new WebSpider(new URL("http://content.guardianapis.com/sections?q=" + foodSection + "&api-key=" + "5299e22b-ca25-4d66-beef-07dadd4e2b5b"));
   }
 }
