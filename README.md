@@ -15,6 +15,11 @@ The project for the final is in the solr folder && the user-interface folder
 8. In order to run the user-interface in "localhost:3000", first run yarn to install all the dependencies and 
 then run " yarn start" to run the UI
 
+![Result Image1](/images/tourism.png)
+<br>
+<br>
+<br>
+<br>
 
 ***Please note in some results the title can have similar names but they are different urls taking us to a different webpage***
 
