@@ -51,15 +51,6 @@ public class WebSpider {
             // changes to make sure url is relevant.
             final URL discoveredURL = new URL(urlText);
             String urlPath = discoveredURL.toString().toLowerCase();
-            /*if(!(urlPath.indexOf("facebook") != -1 || urlPath.indexOf("twitter") != -1 ||
-                    urlPath.contains("support.theguardian.com") || urlPath.indexOf("preference") != -1 ||
-                    urlPath.indexOf("subscription") != -1 || urlPath.indexOf("subscribe") != -1 ||
-                    urlPath.indexOf("signin") != -1 || urlPath.indexOf("signout") != -1 ||
-                    urlPath.indexOf("manage") != -1 || urlPath.indexOf("#maincontent") != -1 ||
-                    urlPath.indexOf("contributions") != -1 || urlPath.indexOf("commentisfree") != -1||
-                    urlPath.indexOf("theguardian.newspapers.com") != -1) || urlPath.indexOf("privacystatement") != -1
-            || urlPath.indexOf("about-guardian-us") != -1 || urlPath.contains("profile.theguardian.com") ||
-            urlPath.indexOf("www.google.co.uk")!= -1) */
             if(!urlPath.contains("facebook") && (urlPath.contains("travel") ||
                     urlPath.contains("food") || urlPath.contains("world") || urlPath.contains("recipes"))){
               newURLS.add(discoveredURL.toString());
