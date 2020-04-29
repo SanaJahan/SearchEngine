@@ -30,6 +30,6 @@ public interface CosineSimilarity {
    * @param document whose idf score we calculate based on the terms
    * @return the calculated cosine similarity value
    */
-  //public double calculateCosineSimilarity(double query, double document);
+  public double calculateCosineSimilarity(double query, double document);
 
 }
