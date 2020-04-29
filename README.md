@@ -16,13 +16,6 @@ The project for the final is in the solr folder && the user-interface folder
 then run " yarn start" to run the UI
 
 
-![Result Image1](/images/best-places-in-UK.png)
-<br>
-<br>
-<br>
-<br>
-![Result Image2](/images/Mauritius.png)
-
 ***Please note in some results the title can have similar names but they are different urls taking us to a different webpage***
 
 
